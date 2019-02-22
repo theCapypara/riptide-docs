@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
+API_EXCLUDE   = ../../**/tests
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -17,3 +18,11 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+apidocs:
+	rm -rf "$(SOURCEDIR)/module_docs"
+	sphinx-apidoc -o "$(SOURCEDIR)/module_docs/lib" -H "Riptide Library" ../lib/riptide "$(API_EXCLUDE)"
+	sphinx-apidoc -o "$(SOURCEDIR)/module_docs/cli" -H "Riptide CLI" ../cli/riptide_cli "$(API_EXCLUDE)"
+	sphinx-apidoc -o "$(SOURCEDIR)/module_docs/proxy" -H "Riptide Proxy" ../proxy/riptide_proxy "$(API_EXCLUDE)"
+	sphinx-apidoc -o "$(SOURCEDIR)/module_docs/engine-docker" -H "Riptide Engine Docker" ../engine-docker/riptide_engine_docker "$(API_EXCLUDE)"
+	sphinx-apidoc -o "$(SOURCEDIR)/module_docs/db-mysql" -H "Riptide DBDriver MySQL" ../db-mysql/riptide_db_mysql "$(API_EXCLUDE)"

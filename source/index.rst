@@ -1,19 +1,20 @@
-.. Riptide documentation master file, created by
-   sphinx-quickstart on Fri Feb 22 16:18:17 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. title:: Riptide
 
-Welcome to Riptide's documentation!
-===================================
+|Riptide|
+=========
+
+.. |Riptide| image:: logo.png
+    :alt: Riptide
+
+Documentation
+-------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
+   user_docs
+   config_docs
+   module_docs
 
 * :ref:`genindex`
 * :ref:`modindex`
