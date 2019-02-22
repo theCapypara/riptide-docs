@@ -10,3 +10,5 @@ User Documentation
    user_docs/5_shell.rst
    user_docs/6_proxy.rst
    user_docs/7_working_with_riptide.rst
+   user_docs/db.rst
+   user_docs/import.rst
