@@ -51,6 +51,14 @@ using the default configuration and DNS is set up). The Service will auto-start
 and after that you will be greeted with the message: ``Hello from hello_world``.
 
 
+Riptide config files
+--------------------
+If you need to edit the Riptide configuration files, here are the paths on where to find them:
+
+* Linux: ``~/.config/riptide``
+* Windows: ``C:\Users\USERNAME\AppData\Local\riptide``
+* Mac: ``/Users/USERNAME/Library/Application Support/riptide``
+
 Documentation
 -------------
 

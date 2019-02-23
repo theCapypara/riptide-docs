@@ -76,7 +76,7 @@ you need to run **after** the setup. If you need to view this again, run ``ripti
 
 Confirm that you want to run the interactive setup by pressing ``y``.
 
-.. tip:: If you accidentaly press ``n`` or make mistake later during the setup, you can always restart it
+.. tip:: If you accidentaly press ``n`` or make a mistake later during the setup, you can always restart it
          by passing the ``--force`` option.
 
 
@@ -154,7 +154,13 @@ After the import, or after you skipped it, Riptide will inform you that it is do
 Next steps
 ~~~~~~~~~~
 
-The project is now set-up. Please follow the next pages of this guide to setup
+The project is now set-up. If you are setting up a real project, there may need
+to be some additional steps you have to do now, that you were told in the usage notes.
+If you need to view these notes again run ``riptide notes``. This will show you both
+the general usage notes, that may contain things you need to do after importing an existing project,
+and installation notes, for starting from scratch.
+
+Please follow the next pages of this guide to setup
 Bash and Zsh integration and the Proxy Server.
 
 If you want to import databases or files later on, see `Managing Databases <db>`_
