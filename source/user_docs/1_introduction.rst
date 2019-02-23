@@ -10,7 +10,7 @@ Riptide abstracts the virtualization in such a way that the environment behaves 
 as if you were running it natively, without the need to install any other requirements
 the project may have.
 
-Riptide has to following mayor features:
+Riptide has to following major features:
 
 * Environments can be defined in re-usable YAML files. The components of these files
   can be shared across multiple projects using Git repositories.

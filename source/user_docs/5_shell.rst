@@ -65,7 +65,7 @@ To enable it for **Zsh**, add the following line to your ``.zshrc``::
 
   eval "$(_RIPTIDE_COMPLETE=source_zsh <full_path_to_riptide>)"
 
-Replace ``full_path_to_riptide`` with the full path to the ``riptide`` command.
+Replace ``<full_path_to_riptide>`` with the full path to the ``riptide`` command.
 On Mac and Linux you can get this path by executing ``which riptide``.
 
 You need to re-open your terminals or source the rc-file inside them

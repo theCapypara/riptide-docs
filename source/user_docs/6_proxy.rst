@@ -25,7 +25,7 @@ If you don't have a network administrator, you can setup a DNS forwarder like
 `Dnsmasq <https://en.wikipedia.org/wiki/Dnsmasq>`_ on your machine instead.
 
 Proxy Server HTTP/HTTPS Ports
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The proxy server can route HTTP and HTTPS traffic. You can change the ports by
 editing the system configuration (``riptide config-edit-user``) and changing
 the values of ``riptide.proxy.ports``.
@@ -42,7 +42,7 @@ Do this if you want to run the proxy server behind a reverse proxy with SSL
 termination.
 
 Auto-Start and Auto-Exit
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 The proxy server can automatically start projects if you access the URL for a
 service. To disable this set ``riptide.proxy.autostart`` to ``false``
 in the system configuration. ``true`` enables it.
@@ -54,11 +54,11 @@ of no request, set the ``riptide.proxy.autoexit`` setting to a value
 .. note:: Auto-exit is not implemented yet.
 
 Starting the Proxy Server
-~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 How to start the proxy server depends on your system.
 
 Linux, ports <= 1024
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 If you are on Linux and the port number of either HTTP or HTTPS is below 1024,
 you need to start the Proxy Server as root. These elevated privileges are required
 for applications to be able to bind ports below 1024. After binding the port the
@@ -175,7 +175,7 @@ Nginx
 .. todo:: WIP
 
 Apache
-^^^^^
+^^^^^^
 .. todo:: WIP
 
 Import the SSL certificate authority

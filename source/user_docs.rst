@@ -12,3 +12,4 @@ User Documentation
    user_docs/7_working_with_riptide.rst
    user_docs/db.rst
    user_docs/import.rst
+   user_docs/log_files.rst

@@ -12,14 +12,14 @@ URL you configured for the proxy. You should be greeted with a landing page:
 
 .. image:: /_static/img/guide_landing_page.png
 
-As you can see, also projects with all services, that have HTTP capabilities,
+As you can see, projects with all services that have HTTP capabilities
 are listed here. You can click on a link to access the service.
 
 All service URLs have the following structure::
   <project>(__<service>).<proxy-url>
 
 If your service is configured to be the main service of the URL, it's url is simply
-the URL of the proxy (eg. ``dummy.riptide.local``). If your project has multiple
+the URL of the project (eg. ``dummy.riptide.local``). If your project has multiple
 services, than the other services are accessible by adding two underscores to the
 name of the project (eg. ``dummy__service2.riptide.local``).
 
@@ -40,8 +40,8 @@ stay the same.
 
 For example, if you have two projects, both with a MySQL server that would normally run
 on port 3306, then the first project may reserve the port 3306 and the second one 3307.
-These ports will always stay the same for these projects so you can configure your
-SQL software for these projects.
+The ports will always stay the same for these projects so you can configure your
+SQL software accordingly.
 
 To view the additional ports for a project, run ``riptide status`` after the services
 have been started:
