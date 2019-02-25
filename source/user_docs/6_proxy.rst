@@ -172,11 +172,86 @@ will terminate SSL for you.
 
 Nginx
 ^^^^^
-.. todo:: WIP
+
+.. code-block:: nginx
+
+    server {
+      listen 80;
+      listen [::]:80;
+
+      # Configure SSL if desired
+      #listen *:443 ssl http2;
+      #listen [::]:443 ssl http2;
+      #ssl_certificate ...
+      #ssl_certificate_key ...
+
+      server_name <INSERT PROXY HOSTNAME HERE>;
+      server_name *.<INSERT PROXY HOSTNAME HERE>;
+
+      client_max_body_size 2G;
+
+      location / {
+          proxy_pass            http://127.0.0.1:<INSERT PROXY HTTP PORT HERE>;
+          proxy_read_timeout    90000;
+          proxy_send_timeout    90000;
+          proxy_connect_timeout 90000;
+          send_timeout          90000;
+
+          proxy_set_header      X-Real-IP $remote_addr;
+          proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header      Host $host;
+          proxy_set_header      X-Forwarded-Proto $scheme;
+
+      }
+
+      # WebSocket Reverse Proxy
+      location /___riptide_proxy_ws {
+        proxy_pass http://127.0.0.1:<INSERT PROXY HTTP PORT HERE>;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+      }
+
+    }
+
 
 Apache
 ^^^^^^
-.. todo:: WIP
+
+The modules ``proxy``, ``proxy_http`` and ``proxy_wstunnel`` must be enabled.
+
+.. warning:: This is currently untested, please report if you tested this.
+
+.. code-block:: apacheconf
+
+    <VirtualHost *:80>
+        ServerName <INSERT PROXY HOSTNAME HERE>
+        ServerAlias *.<INSERT PROXY HOSTNAME HERE>
+
+        RewriteCond %{HTTP:Upgrade} =websocket [NC]
+        RewriteRule ^/___riptide_proxy_ws    wss://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/___riptide_proxy_ws [P,L]
+
+        ProxyPreserveHost On
+        ProxyTimeout 90000
+        ProxyPass / http://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/
+        ProxyPassReverse / http://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/
+    </VirtualHost>
+
+    <IfModule mod_ssl.c>
+    <VirtualHost *:443>
+        ServerName <INSERT PROXY HOSTNAME HERE>
+        ServerAlias *.<INSERT PROXY HOSTNAME HERE>
+
+        RewriteCond %{HTTP:Upgrade} =websocket [NC]
+        RewriteRule ^/___riptide_proxy_ws    wss://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/___riptide_proxy_ws [P,L]
+
+        ProxyPreserveHost On
+        ProxyTimeout 90000
+        ProxyPass / http://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/
+        ProxyPassReverse / http://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/
+    </VirtualHost>
+    </IfModule>
+
 
 Import the SSL certificate authority
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
