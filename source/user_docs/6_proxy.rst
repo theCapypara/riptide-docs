@@ -229,7 +229,7 @@ The modules ``proxy``, ``proxy_http`` and ``proxy_wstunnel`` must be enabled.
         ServerAlias *.<INSERT PROXY HOSTNAME HERE>
 
         RewriteCond %{HTTP:Upgrade} =websocket [NC]
-        RewriteRule ^/___riptide_proxy_ws    wss://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/___riptide_proxy_ws [P,L]
+        RewriteRule ^/___riptide_proxy_ws    ws://127.0.0.1:<INSERT PROXY HTTP PORT HERE>/___riptide_proxy_ws [P,L]
 
         ProxyPreserveHost On
         ProxyTimeout 90000
