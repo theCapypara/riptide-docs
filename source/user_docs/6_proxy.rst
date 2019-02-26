@@ -74,6 +74,12 @@ To start the server in this scenario::
 After starting the proxy server head over to the URL you configured for the
 proxy server and you should see a landing page for the proxy server.
 
+Mac , ports <= 1024
+^^^^^^^^^^^^^^^^^^^
+Running the proxy server with ports lower than 1024 is not supported due to
+permission issues on Mac. Please use higher ports and configure firewall
+rules if you wish to access the Proxy Server on ports lower than 1024.
+
 All other platforms
 ^^^^^^^^^^^^^^^^^^^
 On all other platforms and on Linux when using ports above 1024, you can start
