@@ -95,7 +95,11 @@ For this dummy project, a MySQL database can be imported, Riptide will tell you 
     > DATABASE IMPORT
   > Do you want to import a database (format mysql)? [Y/n]
 
-For this demo, `download this SQL file </_static/demo.sql>`_ and place it somewhere with the name ``demo.sql``.
+For this demo, open a text editor and put the following contents in a file called ``demo.sql``::
+
+  CREATE TABLE Hello (
+      World varchar(255)
+  );
 
 Enter ``y`` to confirm that you want to import an SQL file::
 
