@@ -80,6 +80,12 @@ Running the proxy server with ports lower than 1024 is not supported due to
 permission issues on Mac. Please use higher ports and configure firewall
 rules if you wish to access the Proxy Server on ports lower than 1024.
 
+If you still want to use the Proxy on a port lower than 1024, you can use
+soemthing like socat to redirect the traffic::
+
+  socat tcp-listen:80,reuseaddr,fork tcp:localhost:<PROXY HTTP PORT>
+  socat tcp-listen:443,reuseaddr,fork tcp:localhost:<PROXY HTTPS PORT>
+
 All other platforms
 ^^^^^^^^^^^^^^^^^^^
 On all other platforms and on Linux when using ports above 1024, you can start
