@@ -151,7 +151,7 @@ Create the following unit file under ``~/.config/systemd/user/riptide.service``:
   Restart=on-failure
 
   [Install]
-  WantedBy=multi-user.target
+  WantedBy=default.target
 
 You need to replace ``<PROXY>`` with the full path to the proxy executable
 which you can get by calling ``which riptide_proxy``.
