@@ -9,20 +9,13 @@ The Proxy server URL can be configured by calling ``riptide config-edit-user``
 and changing the value of ``riptide.proxy.url``.
 
 Enter the hostname you want your proxy server to be accessible at there.
-Your local machine must be routable to this hostname and all wildcard domains
-for that hostname.
 
-Assuming you enter ``riptide.local`` the following hostnames must be routable
-to your local machine using DNS:
+By default Riptide will add entries to your system's hosts-file to make sure your projects
+can be routed at thie address.
+See `"Resolving Hostnames & Permissions for the /etc/hosts file" <3_installing>`_ for more information..
 
-* ``riptide.local``
-* ``*.riptide.local``
-
-Please ask your network administrator on how to setup DNS. For Tudock enter
-``xy.tudock.local`` (where xy are your initials) and ask Marco for network setup.
-
-If you don't have a network administrator, you can setup a DNS forwarder like
-`Dnsmasq <https://en.wikipedia.org/wiki/Dnsmasq>`_ on your machine instead.
+If you change this address, and have hosts-file management enabled, you may need to run
+any command of the Riptide CLI to update the hosts-file with the new domains.
 
 Proxy Server HTTP/HTTPS Ports
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
