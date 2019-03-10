@@ -66,9 +66,8 @@ To change permissions under Linux, you can use the following command::
    sudo setfacl -m u:<YOUR USERNAME>:rw  /etc/hosts
 
 Replace ``<YOUR USERNAME>`` with your ussername.
-Please note hat this will allow all programs running as your userto change this file.
-If you don't want that, you can instead add these entries manually.
 
+If you don't want to change permissions to the file, you can instead add these entries manually.
 If Riptide can't update the file, it will prompt you with a message, whenever it needs updating:
 
 .. image:: /_static/img/guide_hosts_warning.png
