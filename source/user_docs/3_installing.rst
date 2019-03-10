@@ -53,7 +53,7 @@ To install Riptide follow these steps:
   <script src="../_static/asciinema-player.js"></script>
 
 
-Resolving Hostnames & Permissions for the /etc/hosts file
+Resolving hostnames & permissions for the /etc/hosts file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Riptide uses a proxy server to route traffic to your projects. This proxy server
 uses hostnames to route traffic. These hostnames need to be routable to your local machine.
@@ -61,11 +61,11 @@ uses hostnames to route traffic. These hostnames need to be routable to your loc
 In order to make this easy for you, Riptide (by default) automatically updates the /etc/hosts file
 (may have a `different path under different OSes <https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system>`_).
 However in order to do so, **your local user needs write access to this file**.
-To change permissions under Linux, you can use the following command:
+To change permissions under Linux, you can use the following command::
 
    sudo setfacl -m u:<YOUR USERNAME>:rw  /etc/hosts
 
-Replace `<YOUR USERNAME>` with your ussername.
+Replace ``<YOUR USERNAME>`` with your ussername.
 Please note hat this will allow all programs running as your userto change this file.
 If you don't want that, you can instead add these entries manually.
 
@@ -75,12 +75,12 @@ If Riptide can't update the file, it will prompt you with a message, whenever it
 
 Manual routing
 ^^^^^^^^^^^^^^
-Alternatively you can disable the automatic update of the hosts file by setting `update_hosts_file`
-to `false` in the configuration file.
+Alternatively you can disable the automatic update of the hosts file by setting ``update_hosts_file``
+to ``false`` in the configuration file.
 
 In this case, you need to make sure, all project URLs are routed correctly via DNS.
 
-Assuming you enter ``riptide.local`` the following hostnames must be routable
+Assuming you set the proxy server to run under ``riptide.local`` the following hostnames must be routable
 to your local machine using DNS:
 
 * ``riptide.local``
