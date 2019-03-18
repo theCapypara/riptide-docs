@@ -13,3 +13,4 @@ User Documentation
    user_docs/db.rst
    user_docs/import.rst
    user_docs/log_files.rst
+   user_docs/repos.rst

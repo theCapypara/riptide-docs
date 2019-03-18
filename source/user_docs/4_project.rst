@@ -53,7 +53,7 @@ Running the first-time setup
 
 To run the first-time setup run::
 
-  $ riptide setup
+  $ riptide -u setup
   Thank you for using Riptide!
   This command will guide you through the initial setup for dummy.
   Please follow it very carefully, it won't take long!
@@ -68,6 +68,10 @@ After starting the setup, press any key::
 
   > Do you wish to run this interactive setup? [Y/n]
 
+
+.. tip:: ``-u`` is for updating your repositories. You don't actually need it when you are using the demo project above.
+         However it is required if you use a project, that loads configuration from a repository.
+         See `Using Repositories <repos>`_ for more information.
 
 
 Riptide will then show you the usage notes that
