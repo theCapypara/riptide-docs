@@ -39,7 +39,7 @@ To install Riptide follow these steps:
 
    For Tudock enter ``ssh://git@k4101.pixsoftware.de:7999/riptide/repo.git``.
 
-   Everything else will be configured later in the chapter `Proxy Server Setup <6_proxy>`_.
+   Everything else will be configured later in the chapter `Proxy Server Setup <6_proxy.html>`_.
 
    .. raw:: html
 

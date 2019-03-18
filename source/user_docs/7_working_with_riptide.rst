@@ -50,7 +50,7 @@ have been started:
 
 Running CLI commands
 ~~~~~~~~~~~~~~~~~~~~
-.. note:: This section assumes you have the `Shell Integration <5_shell>`_ set up.
+.. note:: This section assumes you have the `Shell Integration <5_shell.html>`_ set up.
           If not, prefix all commands with ``riptide cmd``.
 
 A project may define helpful shell commands for you to use.

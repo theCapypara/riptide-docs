@@ -71,7 +71,7 @@ After starting the setup, press any key::
 
 .. tip:: ``-u`` is for updating your repositories. You don't actually need it when you are using the demo project above.
          However it is required if you use a project, that loads configuration from a repository.
-         See `Using Repositories <repos>`_ for more information.
+         See `Using Repositories <repos.html>`_ for more information.
 
 
 Riptide will then show you the usage notes that
@@ -171,5 +171,5 @@ and installation notes, for starting from scratch.
 Please follow the next pages of this guide to setup
 Bash and Zsh integration and the Proxy Server.
 
-If you want to import databases or files later on, see `Managing Databases <db>`_
-and `Importing Files <import>`_.
+If you want to import databases or files later on, see `Managing Databases <db.html>`_
+and `Importing Files <import.html>`_.

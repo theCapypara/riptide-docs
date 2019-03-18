@@ -268,7 +268,7 @@ warning every time you restart the proxy server or enter a different project.
 Location
 ^^^^^^^^
 The CA file is located under
-"`<CONFIG> <../index#Riptide-config-files>`_/riptide_proxy/ca.pem".
+"`<CONFIG> <../index.html#Riptide-config-files>`_/riptide_proxy/ca.pem".
 
 The file is created on the first startup of the proxy server. You can also place
 your own CA file here.

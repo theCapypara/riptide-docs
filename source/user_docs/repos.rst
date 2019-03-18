@@ -18,5 +18,5 @@ Riptide repositories are Git repositories. Enter the clone-URLs for your reposit
 
 You can update (pull) the current contents of all repositories by passing ``-u`` or ``--update`` to any Riptide command.
 
-The repositories are stored in the "`<CONFIG> <../index#Riptide-config-files>`_/repos" folder.
+The repositories are stored in the "`<CONFIG> <../index.html#Riptide-config-files>`_/repos" folder.
 Since they are oridinary Git repositories you can pull and push repositories that are stored there.

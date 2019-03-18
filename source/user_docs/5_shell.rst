@@ -7,7 +7,7 @@ We highly recommend installing these!
 CLI Command Aliases
 ~~~~~~~~~~~~~~~~~~~
 Riptide projects may define custom commands for you to use.
-The demo project from the `previous chapter <4_project>`_ for example
+The demo project from the `previous chapter <4_project.html`_ for example
 defines a ``mysql`` command. To run it *without* the integration you have to execute::
 
   $ riptide cmd mysql -e "DESCRIBE Hello;"

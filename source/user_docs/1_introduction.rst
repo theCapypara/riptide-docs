@@ -48,7 +48,7 @@ Riptide is split into the following sub-projects:
   * ``riptide_engine_docker``: Docker Engine
 
 * Database Drivers: Optional components that make managing databases in your development environment easier.
-  See `Managing Databases <db>`_ for features.
+  See `Managing Databases <db.html>`_ for features.
   The following Database Drivers are available:
 
   * ``riptide_db_mysql``: Driver for MySQL based databases
@@ -61,4 +61,4 @@ This guide shows you how to set up Riptide and how to interact with services and
 
 This is the user documentation, it assumes that someone has already set up a project for you.
 If you want to set-up a project yourself we recommend that you
-follow this guide first using the provided "Hello Wold" app. After that, read through the `Configuration Guide <../config_docs>`_.
+follow this guide first using the provided "Hello Wold" app. After that, read through the `Configuration Guide <../config_docs.html>`_.

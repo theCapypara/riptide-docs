@@ -25,7 +25,7 @@ Listing environments and status
 Creating a new environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 Use ``riptide db-new NAME`` to create a new EMPTY database environment. This also switches
-the current environment to this new one. See `Copying <#copying>`_ instead if you
+the current environment to this new one. See `Copying.html <#copying>`_ instead if you
 want to copy an existing environment.
 
 Importing and exporting
