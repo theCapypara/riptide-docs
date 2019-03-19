@@ -15,7 +15,7 @@ There is a good chance you already have Python installed. Try running ``python3 
 
 Additional requirements for Linux
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Under Linux you need to install the additional requirements for `python-prctl <https://github.com/seveas/python-prctl>`::
+Under Linux you need to install the additional requirements for `python-prctl <https://github.com/seveas/python-prctl>`_::
 
   Before installing python-prctl, you need GCC, libc headers and libcap headers.
   On Debian/Ubuntu:
