@@ -12,3 +12,16 @@ Python is available for Linux and Mac machines using package managers.
 For Windows it can be downloaded on the `Python website <https://www.python.org/downloads/>`_.
 
 There is a good chance you already have Python installed. Try running ``python3 --version`` to check.
+
+Additional requirements for Linux
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Under Linux you need to install the additional requirements for `python-prctl <https://github.com/seveas/python-prctl>`::
+
+  Before installing python-prctl, you need GCC, libc headers and libcap headers.
+  On Debian/Ubuntu:
+
+  $ sudo apt-get install build-essential libcap-dev
+
+  On fedora:
+
+  $ sudo yum install gcc glibc-devel libcap-devel
