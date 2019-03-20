@@ -96,6 +96,80 @@ and ``stop`` commands. You can pass the ``-s`` flag to only affect certain servi
 
 To view the names and status of all services run ``riptide status``.
 
+Running services in foreground
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sometimes you might need to run a command in foreground mode (attached to your console; interactively) like
+you would run other commands. This may be needed if you want to debug the service. For example
+when using NodeJS you can configure this with the debugger of your IDE to start and stop
+your application service via the IDE and have it attach it's debugger.
+
+To run a service in foreground use ``start-fg``. In this example a service named ``varnish`` is run in foreground::
+
+  $ riptide start-fg -s www varnish                                                                                                                                                                                          riptide  prediger2  13:20:03
+  (1/3) Starting other services...
+  Starting services...
+
+  www: 2/2|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| Already started!
+
+  (2/3) Stopping varnish...
+  Stopping services...
+
+  varnish: 3/3|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| Stopped!
+
+  (3/3) Starting in varnish foreground mode...
+  bind(): Cannot assign requested address
+  child (37) Started
+  Child (37) said Child starts
+
+Please note that some service options are ignored when running a service interactively:
+
+* The logging options for stdout and stderr are ignored. Instead stdout and stderr are directly sent to the terminal.
+* ``pre_start`` and ``post_start`` commands are not run.
+* The ``src`` role is added to the service. This means that the source code of your application will always be avaiable for the service.
+* ``working_directory`` is ignored. The working directory is set to the directory you are currently in. If you are not currently inside the project,
+  the working directory is set to the root of the project.
+
+A note about paths and directories
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Please note that all containers used to run your application use a seperate file system from your own.
+
+The path configured in the ``src`` setting inside the ``riptide.yml`` is avaiable for all services with the ``src`` role and all commands under ``/src``.
+
+If you see paths in logs and other places ``/src`` always represents the project ``src`` setting.
+
+You CAN NOT access files on your machine that are outside of the ``src`` directory.
+Under normal circumstances, this will be no problem. When you start commands and are inside the project ``src``-folder you can access files like normal,
+because Riptide will automatically run the command in the correct directory inside the container.
+
+However **you can not use any paths that are outside the project's ``src`` directory**.
+
+Let's take the following example: We have a directory tree like so::
+
+  /home/me/my_projects
+   -> project
+      -> riptide.yml
+      -> a_file
+  -> other_directory
+      -> b_file
+
+The ``src`` setting is set to ``.``, meaning that all commands and services have the entire ``/home/me/my_projects`` directory mounted to ``/src``.
+
+Because of this, the following will work as expcted. ``my_command`` will be able to access ``a_file``::
+
+  $ pwd
+  /home/me/my_projects/project
+  $ riptide cmd my_command a_file
+  $ riptide cmd my_command ./a_file
+  $ riptide cmd my_command /src/a_file
+
+However the following will **NOT** work. ``my_command`` will find neither ``a_file`` nor ``b_file``::
+
+  $ pwd
+  /home/me/my_projects/project
+  $ riptide cmd my_command /home/me/my_projects/project/a_file
+  $ riptide cmd my_command ../other_directory/b_file
+  $ riptide cmd my_command /home/me/my_projects/other_directory/b_file
+
 Directly access the shell of a service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This should usually not be required, but you can directly access the shell of the
