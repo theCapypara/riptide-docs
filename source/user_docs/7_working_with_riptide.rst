@@ -105,16 +105,16 @@ your application service via the IDE and have it attach it's debugger.
 
 To run a service in foreground use ``start-fg``. In this example a service named ``varnish`` is run in foreground::
 
-  $ riptide start-fg -s www varnish                                                                                                                                                                                          riptide  prediger2  13:20:03
+  $ riptide start-fg -s www varnish
   (1/3) Starting other services...
   Starting services...
 
-  www: 2/2|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| Already started!
+  www: 2/2|██████████████████████████████████████████| Already started!
 
   (2/3) Stopping varnish...
   Stopping services...
 
-  varnish: 3/3|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| Stopped!
+  varnish: 3/3|██████████████████████████████████████| Stopped!
 
   (3/3) Starting in varnish foreground mode...
   bind(): Cannot assign requested address
