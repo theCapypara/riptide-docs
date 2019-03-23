@@ -54,12 +54,26 @@ Running the first-time setup
 To run the first-time setup run::
 
   $ riptide -u setup
+  Updating Riptide repositories...
+      ...
+
+  Updating images...
+      [service/hello_world] Pulling 'strm/helloworld-http':
+          Done!
+      [command/db] Pulling 'mysql:8.0':
+          Done!
+      [command/mysql] Pulling 'mysql:8.0':
+          Done!
+      Done!
+
+  End of --update.
+
   Thank you for using Riptide!
   This command will guide you through the initial setup for dummy.
   Please follow it very carefully, it won't take long!
   > Press any key to continue...
 
-After starting the setup, press any key::
+This will update all repositories and images and start the setup. After starting the setup, press any key::
 
   > BEGIN SETUP
 
@@ -69,9 +83,12 @@ After starting the setup, press any key::
   > Do you wish to run this interactive setup? [Y/n]
 
 
-.. tip:: ``-u`` is for updating your repositories. You don't actually need it when you are using the demo project above.
-         However it is required if you use a project, that loads configuration from a repository.
-         See `Using Repositories <repos.html>`_ for more information.
+.. tip:: ``-u`` or ``--update`` is for updating your repositories and Docker images
+         You can add this flag to any command. Riptide will then first update before running the rest of the command.
+         You should run this command regularly to make sure your images and repositories are up to date.
+         Images contain the file system of the container that Riptide will run.
+         See the `Docker documentation <https://docs.docker.com/get-started/#images-and-containers>`_ for more details on images.
+         See `Using Repositories <repos.html>`_ for more information on repositories.
 
 
 Riptide will then show you the usage notes that

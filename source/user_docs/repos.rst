@@ -17,6 +17,7 @@ You can change repositories by running ``riptide config-user-edit``. Repositorie
 Riptide repositories are Git repositories. Enter the clone-URLs for your repositories there.
 
 You can update (pull) the current contents of all repositories by passing ``-u`` or ``--update`` to any Riptide command.
+This command also updates all project images.
 
 The repositories are stored in the "`<CONFIG> <../index.html#Riptide-config-files>`_/repos" folder.
 Since they are oridinary Git repositories you can pull and push repositories that are stored there.
