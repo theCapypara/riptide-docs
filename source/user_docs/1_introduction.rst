@@ -36,22 +36,22 @@ Riptide has to following major features:
 
 Riptide is split into the following sub-projects:
 
-* Riptide Library (``riptide_lib``): Main Python library that ties everything together.
+* Riptide Library (``riptide-lib``): Main Python library that ties everything together.
 
-* Riptide CLI (``riptide_cli``): CLI that you will interact with to manage your Riptide projects.
+* Riptide CLI (``riptide-cli``): CLI that you will interact with to manage your Riptide projects.
 
-* Riptide Proxy (``riptide_proxy``): Proxy Server that proxies you the content of your web-services.
+* Riptide Proxy (``riptide-proxy``): Proxy Server that proxies you the content of your web-services.
 
 * Engines: The engine that actually starts and stops containers for services and commands.
   The following Engines are available:
 
-  * ``riptide_engine_docker``: Docker Engine
+  * ``riptide-engine-docker``: Docker Engine
 
 * Database Drivers: Optional components that make managing databases in your development environment easier.
   See `Managing Databases <db.html>`_ for features.
   The following Database Drivers are available:
 
-  * ``riptide_db_mysql``: Driver for MySQL based databases
+  * ``riptide-db-mysql``: Driver for MySQL based databases
 
 Riptide Projects include the definition of an app. The app defines what services to run and what commands are available.
 Services are parts of the application that are constantly running, such as the actual web-service or the database.
