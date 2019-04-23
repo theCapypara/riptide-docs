@@ -45,9 +45,9 @@ Create a ``package.json`` containing express as a dependency:
 Creating a basic riptide.yml
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _project: /config_docs/entities/projects.html
-.. _app: /config_docs/entities/apps.html
-.. _service: /config_docs/entities/services.html
+.. _project: ../entities/projects.html
+.. _app: ../entities/apps.html
+.. _service: ../entities/services.html
 
 Create a ``riptide.yml`` with the following contents:
 

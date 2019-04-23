@@ -27,9 +27,9 @@ Delete the ``riptide.yml`` file (we don't want Spoilers :) ).
 Creating a basic riptide.yml
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _project: /config_docs/entities/projects.html
-.. _app: /config_docs/entities/apps.html
-.. _service: /config_docs/entities/services.html
+.. _project: ../entities/projects.html
+.. _app: ../entities/apps.html
+.. _service: ../entities/services.html
 
 Create a ``riptide.yml`` with the following contents:
 

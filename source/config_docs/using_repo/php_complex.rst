@@ -50,9 +50,9 @@ the ``composer`` command.
 Creating a riptide.yml with nginx and php-fpm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _project: /config_docs/entities/projects.html
-.. _app: /config_docs/entities/apps.html
-.. _service: /config_docs/entities/services.html
+.. _project: ../entities/projects.html
+.. _app: ../entities/apps.html
+.. _service: ../entities/services.html
 
 Create a ``riptide.yml`` with the following contents:
 

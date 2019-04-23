@@ -21,8 +21,8 @@ assumes you have the ``repos`` part of the configuration set to only the Riptide
 Creating a project
 ~~~~~~~~~~~~~~~~~~
 
-.. _project: /config_docs/entities/projects.html
-.. _app: /config_docs/entities/apps.html
+.. _project: ../entities/projects.html
+.. _app: ../entities/apps.html
 
 To create a project, create a new file named ``riptide.yml`` with the following contents:
 

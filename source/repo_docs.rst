@@ -14,7 +14,7 @@ add the things you need. Or set up your own and use both. If you built something
 contribute to the community repository to make it even better!
 
 .. _Riptide Community Repository: https://github.com/Parakoopa/riptide-repo
-.. _Configuration Guide: /config_docs.html
+.. _Configuration Guide: ../config_docs.html
 
 Apps
 ~~~~
