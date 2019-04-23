@@ -1,7 +1,7 @@
 Shell Integration
 -----------------
 
-Riptide has integrations for the pouplar Bash and Zsh shells.
+Riptide has integrations for the popular Bash and Zsh shells.
 We highly recommend installing these!
 
 CLI Command Aliases

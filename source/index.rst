@@ -18,7 +18,7 @@ the project may have.
 Hello World!
 ------------
 
-A simple hello world webservice:
+A simple hello world web service:
 
 .. code-block:: yaml
 

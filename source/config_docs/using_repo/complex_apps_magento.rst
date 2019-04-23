@@ -39,7 +39,7 @@ from the Riptide repository (`Github <https://github.com/Parakoopa/riptide-repo/
 
 We choose the ``src`` directory to install Magento in.
 
-The Magento 2 app comes with PHP-FPM, Nginx, Varnish, MySQL, Redis, RabbitMQ and Mailhog as Mailcatcher.
+The Magento 2 app comes with PHP-FPM, Nginx, Varnish, MySQL, Redis, RabbitMQ and Mailhog as mail catcher.
 The default configuration should be suited for most needs, but the next steps of this guide
 will also show you, how to customize your Magento 2 installation.
 

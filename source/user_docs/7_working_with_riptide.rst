@@ -5,8 +5,8 @@ Now you have everything set up! It is time to access your project through Riptid
 
 This part of the guide will show you how to do daily tasks with Riptide.
 
-Access your projects webservices
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Access your projects web services
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 First make sure that the proxy server is started. After that head to the
 URL you configured for the proxy. You should be greeted with a landing page:
 
@@ -24,11 +24,11 @@ services, than the other services are accessible by adding two underscores to th
 name of the project (eg. ``dummy__service2.riptide.local``).
 
 Accessing the dummy project's hello_wold service as shown in the screenshot above,
-will present you with the autostart page of this webservice:
+will present you with the autostart page of this web service:
 
 .. image:: /_static/img/guide_autostart.png
 
-After your project has started up, you will see the contents served by your webservice:
+After your project has started up, you will see the contents served by your web service:
 
 .. image:: /_static/img/guide_hello_world.png
 
@@ -85,7 +85,7 @@ Starting and stopping services via CLI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can start and stop services on the CLI by using the ``start``, ``restart``
 and ``stop`` commands. You can pass the ``-s`` flag to only affect certain services
-(comma sperated)::
+(comma separated)::
 
   $ riptide stop -s hello_world,db
   Stopping services...
@@ -125,15 +125,15 @@ Please note that some service options are ignored when running a service interac
 
 * The logging options for stdout and stderr are ignored. Instead stdout and stderr are directly sent to the terminal.
 * ``pre_start`` and ``post_start`` commands are not run.
-* The ``src`` role is added to the service. This means that the source code of your application will always be avaiable for the service.
+* The ``src`` role is added to the service. This means that the source code of your application will always be available for the service.
 * ``working_directory`` is ignored. The working directory is set to the directory you are currently in. If you are not currently inside the project,
   the working directory is set to the root of the project.
 
 A note about paths and directories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Please note that all containers used to run your application use a seperate file system from your own.
+Please note that all containers used to run your application use a separate file system from your own.
 
-The path configured in the ``src`` setting inside the ``riptide.yml`` is avaiable for all services with the ``src`` role and all commands under ``/src``.
+The path configured in the ``src`` setting inside the ``riptide.yml`` is available for all services with the ``src`` role and all commands under ``/src``.
 
 If you see paths in logs and other places ``/src`` always represents the project ``src`` setting.
 
@@ -154,7 +154,7 @@ Let's take the following example: We have a directory tree like so::
 
 The ``src`` setting is set to ``.``, meaning that all commands and services have the entire ``/home/me/my_projects`` directory mounted to ``/src``.
 
-Because of this, the following will work as expcted. ``my_command`` will be able to access ``a_file``::
+Because of this, the following will work as expected. ``my_command`` will be able to access ``a_file``::
 
   $ pwd
   /home/me/my_projects/project

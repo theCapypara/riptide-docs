@@ -21,7 +21,7 @@ Configuration file
 Create your system configuration file using ``riptide config-edit-user``.
 This will open an editor.
 
-Leave everyhting on default for now, individual settings will be explained in the next sections.
+Leave everything on default for now, individual settings will be explained in the next sections.
 
 Riptide CLI is now ready to use! Continue to the next chapters to learn how
 to use it with a project and how to setup the Proxy Server.
@@ -43,7 +43,7 @@ To change permissions under Linux, you can use the following command::
 
    sudo setfacl -m u:<YOUR USERNAME>:rw  /etc/hosts
 
-Replace ``<YOUR USERNAME>`` with your ussername.
+Replace ``<YOUR USERNAME>`` with your username.
 
 If you don't want to change permissions to the file, you can instead add these entries manually.
 If Riptide can't update the file, it will prompt you with a message, whenever it needs updating:

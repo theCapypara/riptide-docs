@@ -97,7 +97,7 @@ you need to run **after** the setup. If you need to view this again, run ``ripti
 
 Confirm that you want to run the interactive setup by pressing ``y``.
 
-.. tip:: If you accidentaly press ``n`` or make a mistake later during the setup, you can always restart it
+.. tip:: If you accidentally press ``n`` or make a mistake later during the setup, you can always restart it
          by passing the ``--force`` option.
 
 

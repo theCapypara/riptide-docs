@@ -11,7 +11,7 @@ and changing the value of ``riptide.proxy.url``.
 Enter the hostname you want your proxy server to be accessible at there.
 
 By default Riptide will add entries to your system's hosts-file to make sure your projects
-can be routed at thie address.
+can be routed at this address.
 See `"Advanced: Resolving hostnames & /etc/hosts file" <3_installing.html#advanced-resolving-hostnames-etc-hosts-file>`_ for more information..
 
 If you change this address, and have hosts-file management enabled, you may need to run
@@ -26,7 +26,7 @@ the values of ``riptide.proxy.ports``.
 If you plan to use the proxy server standalone as your primary HTTP and HTTPS
 server on your machine, leave the defaults (80 and 443).
 
-If you already have a webserver on ports 80 and 443 and/or plan to use the
+If you already have a web server on ports 80 and 443 and/or plan to use the
 Riptide proxy behind a reverse proxy (eg. Nginx or Apache), change the ports
 to something else, preferably a four-digit port combination (eg. 8080 and 8443).
 
@@ -85,7 +85,7 @@ Linux, ports <= 1024 (Systemd)
 When using the proxy server with ports below 1024, the server needs to be run as root.
 This means for autostart it has to be configured as a system level service.
 
-Create the follwing unit file under ``/etc/systemd/system/riptide.service``::
+Create the following unit file under ``/etc/systemd/system/riptide.service``::
 
   [Unit]
   Description=Riptide
@@ -100,7 +100,7 @@ Create the follwing unit file under ``/etc/systemd/system/riptide.service``::
 You need to replace ``<USERNAME>`` with your username and ``<PROXY>`` with the
 full path to the proxy executable which you can get by calling ``which riptide_proxy``.
 
-After that you need to reload the systemd daemon::
+After that you need to reload the Systemd daemon::
 
   sudo systemctl daemon-reload
 
@@ -133,7 +133,7 @@ Create the following unit file under ``~/.config/systemd/user/riptide.service``:
 You need to replace ``<PROXY>`` with the full path to the proxy executable
 which you can get by calling ``which riptide_proxy``.
 
-After that you need to reload the systemd daemon::
+After that you need to reload the Systemd daemon::
 
   sudo systemctl daemon-reload
 
@@ -243,7 +243,7 @@ The modules ``proxy``, ``proxy_http`` and ``proxy_wstunnel`` must be enabled.
 
 Import the SSL certificate authority
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-If you enable the HTTPS feature of the proxy server, you propably want to import
+If you enable the HTTPS feature of the proxy server, you probably want to import
 the certificate authority (CA) into your browser, so that you don't get an SSL
 warning every time you restart the proxy server or enter a different project.
 
@@ -262,7 +262,7 @@ Chrome
 
 2. Go to the tab for certificate authorities
 
-3. Click Import and import the CA file, mark it as trusted to identidy websites.
+3. Click Import and import the CA file, mark it as trusted to identify websites.
 
 Firefox
 ^^^^^^^
