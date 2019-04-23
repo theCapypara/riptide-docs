@@ -30,7 +30,7 @@ Demo project (place in ``riptide.yml`` in empty directory):
           hello_world:
             image: strm/helloworld-http
             port: 80
-            run_as_root: true
+            run_as_current_user: false
             roles:
               - main
           db:
@@ -42,7 +42,7 @@ Demo project (place in ``riptide.yml`` in empty directory):
               config:
                 database: dummy
                 password: mysql
-            run_as_root: true
+            run_as_current_user: false
         commands:
           mysql:
             image: "{{ parent().get_service_by_role('db').image }}"

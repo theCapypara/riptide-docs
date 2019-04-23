@@ -205,3 +205,4 @@ todo_include_todos = True
 
 def setup(sphinx):
     sphinx.add_stylesheet('asciinema-player.css')
+    sphinx.add_stylesheet('admonition-variable-helper.css')

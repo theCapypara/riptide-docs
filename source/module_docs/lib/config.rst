@@ -8,13 +8,9 @@
 
 .. automodule:: riptide.config.document
 
-.. toctree::
-
-   config/document.config.rst
-   config/document.project.rst
-   config/document.app.rst
-   config/document.service.rst
-   config/document.command.rst
+A document is also called an entity.
+The documentation for the entities can be found in the
+`Configuration Guide </config_docs/entities.html>`_.
 
 ``config.service`` --- Service related modules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

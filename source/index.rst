@@ -32,7 +32,7 @@ A simple hello world webservice:
           hello_world:
             image: strm/helloworld-http
             port: 80
-            run_as_root: true
+            run_as_current_user: false
             roles:
               - main
 
@@ -67,6 +67,7 @@ Documentation
 
    user_docs
    config_docs
+   repo_docs
    module_docs
 
 * :ref:`genindex`

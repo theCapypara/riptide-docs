@@ -12,7 +12,7 @@ Enter the hostname you want your proxy server to be accessible at there.
 
 By default Riptide will add entries to your system's hosts-file to make sure your projects
 can be routed at thie address.
-See `"Resolving Hostnames & Permissions for the /etc/hosts file" <3_installing#resolving-hostnames-permissions-for-the-etc-hosts-file>`_ for more information..
+See `"Advanced: Resolving hostnames & /etc/hosts file" <3_installing.html#advanced-resolving-hostnames-etc-hosts-file>`_ for more information..
 
 If you change this address, and have hosts-file management enabled, you may need to run
 any command of the Riptide CLI to update the hosts-file with the new domains.
@@ -33,18 +33,6 @@ to something else, preferably a four-digit port combination (eg. 8080 and 8443).
 You can also disable HTTPS by setting the value for ``https`` to ``false``.
 Do this if you want to run the proxy server behind a reverse proxy with SSL
 termination.
-
-Auto-Start and Auto-Exit
-~~~~~~~~~~~~~~~~~~~~~~~~
-The proxy server can automatically start projects if you access the URL for a
-service. To disable this set ``riptide.proxy.autostart`` to ``false``
-in the system configuration. ``true`` enables it.
-
-If you want the proxy to automatically shutdown projects after a certain time
-of no request, set the ``riptide.proxy.autoexit`` setting to a value
-(unit is minutes). ``false`` disables the feature.
-
-.. note:: Auto-exit is not implemented yet.
 
 Starting the Proxy Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,15 +57,11 @@ proxy server and you should see a landing page for the proxy server.
 
 Mac , ports <= 1024
 ^^^^^^^^^^^^^^^^^^^
-Running the proxy server with ports lower than 1024 is not supported due to
-permission issues on Mac. Please use higher ports and configure firewall
-rules if you wish to access the Proxy Server on ports lower than 1024.
+Running the proxy server with ports lower than 1024 may or may not be possible on your system
+based on how your machine is set up.
 
-If you still want to use the Proxy on a port lower than 1024, you can use
-soemthing like socat to redirect the traffic::
-
-  socat tcp-listen:80,reuseaddr,fork tcp:localhost:<PROXY HTTP PORT>
-  socat tcp-listen:443,reuseaddr,fork tcp:localhost:<PROXY HTTPS PORT>
+You may be able to follow the "all other platforms" section of this guide. However if this does not
+work for you please use higher ports and configure firewall rules.
 
 All other platforms
 ^^^^^^^^^^^^^^^^^^^
@@ -226,8 +210,6 @@ Apache
 
 The modules ``proxy``, ``proxy_http`` and ``proxy_wstunnel`` must be enabled.
 
-.. warning:: This is currently untested, please report if you tested this.
-
 .. code-block:: apacheconf
 
     <VirtualHost *:80>
@@ -291,3 +273,9 @@ Firefox
 
 3. On the "Authorities" tab "Import..." the CA certificate. Trust the certificate
    to identify websites.
+
+Auto-Start services
+~~~~~~~~~~~~~~~~~~~
+The proxy server can automatically start projects if you access the URL for a
+service. To disable this set ``riptide.proxy.autostart`` to ``false``
+in the system configuration. ``true`` enables it.
