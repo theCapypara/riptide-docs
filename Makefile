@@ -19,6 +19,9 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+spelling:
+	@$(SPHINXBUILD) -b spelling "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
 apidocs:
 	#rm -rf "$(SOURCEDIR)/module_docs"
 	#sphinx-apidoc -e -o "$(SOURCEDIR)/module_docs/lib" -H "Riptide Library" ../lib/riptide "$(API_EXCLUDE)"
