@@ -210,7 +210,7 @@ To add a MySQL database, add a new service under ``services``:
 You can specify the database and password. Username is always ``root``.
 
 This is using the MySQL service from the repository and the MySQL database driver. The database
-driver enables the ``database management features </user_docs/db.html>`` of Riptide.
+driver enables the `database management features </../../user_docs/db.html>`_ of Riptide.
 
 Database driver are separate packages that need to be installed. The package for MySQL can
 be installed via ``pip install riptide-db-mysql`` (`Github <https://github.com/Parakoopa/riptide-db-mysql>`_).

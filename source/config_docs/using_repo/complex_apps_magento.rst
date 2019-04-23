@@ -4,7 +4,7 @@ This section will guide you through the setup of a Magento 2 project using the R
 
 Magento is an eCommerce platform written in PHP.
 Riptide has templates for both Magento 1 and Magento 2 projects.
-This guide will only describe the Magento 2 app. In the `Repository Documentation </repo_docs.html#apps>`_ you can find more
+This guide will only describe the Magento 2 app. In the `Repository Documentation <../../repo_docs.html#apps>`_ you can find more
 information about the Magento 1 and Magento 2 templates.
 
 This guide is an example on how to use Riptide with more complex applications and a guide
@@ -197,7 +197,7 @@ To access the database, you have to start it first (either via the Proxy server 
 
 You can access the database directly simply by executing ``mysql``. Additionally you can
 access the database using your favorite SQL client. To get the port you can access the database
-from, see `this section </user_docs/7_working_with_riptide.html#access-other-tcp-udp-ports>`_
+from, see `this section <../../user_docs/7_working_with_riptide.html#access-other-tcp-udp-ports>`_
 of the User Documentation.
 
 Adding own services and commands

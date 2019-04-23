@@ -1,7 +1,7 @@
 How Repositories work
 ---------------------
 
-As `explained in the User Documentation </user_docs/repos.html>`_ repositories contain apps, services
+As `explained in the User Documentation <../../user_docs/repos.html>`_ repositories contain apps, services
 and commands that can be used inside projects.
 
 To use an entity from a repository, simply reference it in your project file via ``$ref``:
