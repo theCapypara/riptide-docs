@@ -5,6 +5,7 @@ This guide assumes you want to run Riptide in the most common set-up using the D
 To use Riptide you need to have the following installed:
 
 * Python 3.6+
+* pip for Python 3 (might come installed with Python)
 * `Docker 16.0+ <https://docs.docker.com/install/>`_ (Linux)
 * `Docker Desktop 16.0+ <https://www.docker.com/products/docker-desktop>`_ (Mac, Windows)
 
