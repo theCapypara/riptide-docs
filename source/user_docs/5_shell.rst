@@ -34,17 +34,17 @@ Install the integration
 
 If you are using **Bash**, add the following line to your ``.bashrc``::
 
-  . <installation_dir>/cli/shell/riptide.hook.bash
+  . riptide.hook.bash
 
 If you are using **Zsh**, add the following line to your ``.zshrc``::
 
-  . <installation_dir>/cli/shell/riptide.hook.zsh
+  . riptide.hook.zsh
 
-``<installation_dir>`` is the folder you placed all the Riptide components in,
-if you followed this guide this should be ``~/riptide``.
+You need to re-open your terminals for the integration to be enabled (or source your bashrc/zshrc).
 
-You need to re-open your terminals or source the rc-file inside them
-for the integration to be enabled.
+.. warning:: When using Riptide inside a virtualenv, you need to replace ``riptide.hook.bash`` with
+             the full path to ``riptide.hook.bash``. You can get that by calling ``which riptide.hook.bash``.
+             The same applies for the zsh integration.
 
 .. note:: If you want to try these commands out yourself using the demo project,
           you may need to start the database first: ``riptide start -s db``.
@@ -59,14 +59,17 @@ Riptide has limited experimental autocomplete support.
 
 To enable it for **Bash**, add the following line to your ``.bashrc``::
 
-  eval "$(_RIPTIDE_COMPLETE=source_bash <full_path_to_riptide>)"
+  eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
 
 To enable it for **Zsh**, add the following line to your ``.zshrc``::
 
-  eval "$(_RIPTIDE_COMPLETE=source_zsh <full_path_to_riptide>)"
+  eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
 
 Replace ``<full_path_to_riptide>`` with the full path to the ``riptide`` command.
 On Mac and Linux you can get this path by executing ``which riptide``.
 
 You need to re-open your terminals or source the rc-file inside them
 for the integration to be enabled.
+
+.. warning:: When using Riptide inside a virtualenv, you need to replace ``riptide`` with
+             the full path to ``riptide``. You can get that by calling ``which riptide``.
