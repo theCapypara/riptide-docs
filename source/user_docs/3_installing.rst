@@ -3,17 +3,21 @@ Installing Riptide
 
 To install all common Riptide components and the Docker implementation run the following command::
 
-  $ pip install riptide-proxy riptide-cli riptide-engine-docker
+  $ [sudo] pip3 install riptide-proxy riptide-cli riptide-engine-docker
 
 If you use databases, you may need to install additional components, called database drivers::
 
-  $ pip install riptide-db-mysql # MySQL
+  $ [sudo] pip3 install riptide-db-mysql # MySQL
 
 You can test if Riptide is working:
 
 .. raw:: html
 
    <asciinema-player src="../_static/casts/test_riptide.cast" cols="80" rows="24"></asciinema-player>
+
+.. warning::
+   Make sure to run these commands as root (using sudo) under Linux to install Riptide system-wide. Alternatively you can use Virtualenvs
+   without sudo.
 
 Configuration file
 ~~~~~~~~~~~~~~~~~~
