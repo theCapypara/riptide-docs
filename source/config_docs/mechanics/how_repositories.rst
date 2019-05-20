@@ -108,7 +108,7 @@ The end result is the following project file:
 Removing values
 ~~~~~~~~~~~~~~~
 
-During the merging process is possible to remove values entirely using the special keyword ``$renove``.
+During the merging process it is possible to remove values entirely using the special keyword ``$renove``.
 
 Example (remove a service from a loaded app):
 
