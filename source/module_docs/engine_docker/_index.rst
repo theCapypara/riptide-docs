@@ -3,4 +3,10 @@ Riptide Engine Docker
 
 .. automodule:: riptide_engine_docker
 
-.. todo:: TODO after refactoring
+Entrypoint (``riptide_engine_docker.engine``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: riptide_engine_docker.engine
+    :members:
+    :undoc-members:
+    :show-inheritance:
