@@ -1,7 +1,10 @@
-``riptide_proxy.server`` --- HTTP Server
-----------------------------------------
+``riptide_proxy.server`` --- Server Modules
+-------------------------------------------
 
 .. automodule:: riptide_proxy.server
-    :members:
-    :undoc-members:
-    :show-inheritance:
+
+.. toctree::
+
+   server/starter.rst
+   server/http.rst
+   server/websocket.rst
