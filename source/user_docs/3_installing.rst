@@ -19,6 +19,15 @@ You can test if Riptide is working:
    Make sure to run these commands as root (using sudo) under Linux to install Riptide system-wide. Alternatively you can use Virtualenvs
    without sudo.
 
+Updating Riptide
+----------------
+
+To update Riptide, run
+
+  $ [sudo] riptide_upgrade
+
+Whether or not you need to run the command as root, depends on how you installed Riptide. If in doubt, use sudo under Linux.
+
 Configuration file
 ~~~~~~~~~~~~~~~~~~
 

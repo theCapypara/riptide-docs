@@ -1,0 +1,55 @@
+lib 0.2.0
+---------
+
+.. _services: ../../config_docs/entities/services.html
+.. _commands: ../../config_docs/entities/services.html
+
+Using configuration files in commands
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Previously it was possible to use configuration files defined for services in commands, using the following syntax:
+
+.. code-block:: yaml
+   :emphasize-lines: 10-13
+
+    app:
+      services:
+        example:
+          config:
+            env_php:
+              from: assets/env.php
+              to: '{{ get_working_directory() }}/app/etc/env.php'
+      commands:
+        dummy:
+          additional_volumes:
+            env_php:
+              host: "{{ parent().services.example.config('env_php') }}"
+              container: "{{ parent().services.example.get_working_directory() }}/app/etc/env.php"
+
+This is no longer possible, due to issues related to this functionality. Instead, you can use this new syntax, which will
+add all configuration files of the services tagged with the listed roles to the command. This achieves the same goal.
+
+.. code-block:: yaml
+   :emphasize-lines: 4-5,12-13
+
+    app:
+      services:
+        example:
+          roles:
+            - myrole
+          config:
+            env_php:
+              from: assets/env.php
+              to: '{{ get_working_directory() }}/app/etc/env.php'
+      commands:
+        dummy:
+          config_from_roles:
+            - myrole
+
+The variable helper function ``config`` for Services_ has been removed. ``config_from_roles`` was added to the schema
+for Commands_.
+
+Detailed examples can be seen in the Riptide Community Repository commit `ee1a766 <https://github.com/Parakoopa/riptide-repo/commit/ee1a766c476cf3bdab0fe422f7dae1c4b1869fc2>`_.
+
+The Riptide Community Repository contains a branch ``0.1`` that is automatically used when running ``riptide --update`` with versions
+older than 0.2. This branch is still compatible with the old version, but will not receive updates.

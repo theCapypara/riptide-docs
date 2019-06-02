@@ -69,6 +69,7 @@ Documentation
    config_docs
    repo_docs
    module_docs
+   update_docs
 
 * :ref:`genindex`
 * :ref:`modindex`
