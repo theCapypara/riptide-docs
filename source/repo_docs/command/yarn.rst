@@ -10,7 +10,7 @@ require access to the yarn cache.
 
 .. _yarn: https://yarnpkg.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/yarn>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/yarn>`_
 
 ..  contents:: Index
     :depth: 2

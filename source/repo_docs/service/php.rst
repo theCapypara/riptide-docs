@@ -13,7 +13,7 @@ Some include the Apache web server (``apache`` variants), others include php-fpm
 .. _PhpStorm path mapping key: https://blog.jetbrains.com/phpstorm/2012/03/new-in-4-0-easier-debugging-of-remote-php-command-line-scripts/
 .. _Apache: https://httpd.apache.org/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/php>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/php>`_
 
 ..  contents:: Index
     :depth: 2
