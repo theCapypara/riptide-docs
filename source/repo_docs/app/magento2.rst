@@ -232,19 +232,27 @@ Variant of Magento using the Apache web-server instead.
 Services
 ~~~~~~~~
 
-www
-+++
-
-Is removed.
-
-The apache web-server with a PHP CGI module is in the "php" service.
-
 php
 +++
 
 **Based on**: `/service/php/7.2/apache <https://github.com/Parakoopa/riptide-repo/tree/master/service/php>`_
 
 Apache web server + PHP.
+
+Roles
+.....
+
+**Has roles**: ``src``, ``php``, ``varnish``
+
+Has access to source code (``src``), is marked as main PHP service (``php``)
+and is marked as backend server for Varnish (``varnish``).
+
+www
++++
+
+Is removed.
+
+The apache web-server with a PHP CGI module is in the "php" service.
 
 
 ``/app/magento2/ce/X``
