@@ -29,7 +29,7 @@ You can view the merged result by calling ``riptide config-dump``.
 
 Entities defined in the repository can also reference other entities, even using relative paths.
 
-Repositories are cloned and updated whenever the Riptide CLI is run with the ``--update/-u`` flag.
+Repositories are cloned and updated whenever ``riptide update`` is run.
 
 Complex example
 ~~~~~~~~~~~~~~~

@@ -16,7 +16,7 @@ More information about repositories, can be found in the `configuration guide <.
 You can change repositories by running ``riptide config-user-edit``. Repositories are defined as a list under the ``repo`` key.
 Riptide repositories are Git repositories. Enter the clone-URLs for your repositories there.
 
-You can update (pull) the current contents of all repositories by passing ``-u`` or ``--update`` to any Riptide command.
+You can update (pull) the current contents of all repositories by running ``riptide update``.
 This command also updates all project images.
 
 The repositories are stored in the "`<CONFIG> <../index.html#Riptide-config-files>`_/repos" folder.

@@ -51,5 +51,5 @@ for Commands_.
 
 Detailed examples can be seen in the Riptide Community Repository commit `ee1a766 <https://github.com/Parakoopa/riptide-repo/commit/ee1a766c476cf3bdab0fe422f7dae1c4b1869fc2>`_.
 
-The Riptide Community Repository contains a branch ``0.1`` that is automatically used when running ``riptide --update`` with versions
+The Riptide Community Repository contains a branch ``0.1`` that is automatically used when running ``riptide update`` with versions
 older than 0.2. This branch is still compatible with the old version, but will not receive updates.

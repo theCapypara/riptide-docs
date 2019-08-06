@@ -51,9 +51,9 @@ Demo project (place in ``riptide.yml`` in empty directory):
 Running the first-time setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To run the first-time setup run::
+First, make sure all repositories and Docker images are up to date::
 
-  $ riptide -u setup
+  $ riptide update
   Updating Riptide repositories...
       ...
 
@@ -66,8 +66,13 @@ To run the first-time setup run::
           Done!
       Done!
 
-  End of --update.
+You should run this command regularly to make sure your images and repositories are always up to date.
+See the `Docker documentation <https://docs.docker.com/get-started/#images-and-containers>`_ for more details on images.
+See `Using Repositories <repos.html>`_ for more information on repositories.
 
+To run the first-time setup run::
+
+  $ riptide setup
   Thank you for using Riptide!
   This command will guide you through the initial setup for dummy.
   Please follow it very carefully, it won't take long!
@@ -81,15 +86,6 @@ This will update all repositories and images and start the setup. After starting
       This usage text shows you additional things you need to do when running this project.
 
   > Do you wish to run this interactive setup? [Y/n]
-
-
-.. tip:: ``-u`` or ``--update`` is for updating your repositories and Docker images
-         You can add this flag to any command. Riptide will then first update before running the rest of the command.
-         You should run this command regularly to make sure your images and repositories are up to date.
-         Images contain the file system of the container that Riptide will run.
-         See the `Docker documentation <https://docs.docker.com/get-started/#images-and-containers>`_ for more details on images.
-         See `Using Repositories <repos.html>`_ for more information on repositories.
-
 
 Riptide will then show you the usage notes that
 are defined for the app your project is using. This usage note may contain additional steps
