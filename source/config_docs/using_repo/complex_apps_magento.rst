@@ -235,3 +235,14 @@ or ``commands`` in the project file:
             $ref: /command/node/8
           npm:
             $ref: /command/npm/node8
+
+Configuration management
+~~~~~~~~~~~~~~~~~~~~~~~~
+The Magento Riptide app comes with support for the configuration management
+tool mageconfigsync_. If installed the file `app/etc/config.yml` with the
+environment `dev` is loaded into the database on each start of the project.
+
+.. _mageconfigsync: https://github.com/punkstar/mageconfigsync
+
+If you want to run your own configuration management tools, add the appropriate
+commands to the `post_start` step of the php service.
