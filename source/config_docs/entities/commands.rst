@@ -19,6 +19,10 @@ Schema
 
 .. automethod:: riptide.config.document.command.Command.schema
 
+.. automethod:: riptide.config.document.command.Command.schema_normal
+
+.. automethod:: riptide.config.document.command.Command.schema_alias
+
 Helper Functions
 ~~~~~~~~~~~~~~~~
 
