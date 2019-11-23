@@ -32,8 +32,7 @@ Editing the configuration file manually
 You can use the command ``riptide config-edit-user`` to edit the configuration file.
 
 Alternatively you can also directly edit the file
-"`<CONFIG> <../index.html#Riptide-config-files>`_/config.yml".
- in your favorite editor.
+"`<CONFIG> <../index.html#Riptide-config-files>`_/config.yml" in your favorite editor.
 
 Advanced: Resolving hostnames & /etc/hosts file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
