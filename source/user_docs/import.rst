@@ -2,7 +2,7 @@ Importing Files
 ---------------
 
 Riptide supports the definition of directories that are used to import files
-into during the `project setup <4_project.html>`_.
+into during the `project setup <6_project.html>`_.
 
 You can also import files after the setup is completed by running
 ``riptide import-files KEY PATH_TO_IMPORT``.

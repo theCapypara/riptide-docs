@@ -24,11 +24,15 @@
 .. _repo:           https://github.com/Parakoopa/riptide-repo
 .. _docker_images:  https://github.com/Parakoopa/riptide-docker-images
 
-|docs|
+|docs| |slack|
 
 .. |docs| image:: https://readthedocs.org/projects/riptide-docs/badge/?version=latest
     :target: https://riptide-docs.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
+
+.. |slack| image:: https://slack.riptide.parakoopa.de/badge.svg
+    :target: https://slack.riptide.parakoopa.de
+    :alt: Join our Slack workspace
 
 Riptide is a set of tools to manage development environments for web applications.
 It's using container virtualization tools, such as `Docker <https://www.docker.com/>`_

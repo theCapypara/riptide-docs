@@ -12,7 +12,7 @@ Enter the hostname you want your proxy server to be accessible at there.
 
 By default Riptide will add entries to your system's hosts-file to make sure your projects
 can be routed at this address.
-See `"Advanced: Resolving hostnames & /etc/hosts file" <3_installing.html#advanced-resolving-hostnames-etc-hosts-file>`_ for more information..
+See `"Advanced: Resolving hostnames & /etc/hosts file" <3_configuration.html#advanced-resolving-hostnames-etc-hosts-file>`_ for more information..
 
 If you change this address, and have hosts-file management enabled, you may need to run
 any command of the Riptide CLI to update the hosts-file with the new domains.

@@ -93,7 +93,7 @@ Adding files for import and setup instructions
 For our simple example there are no files to import and we don't really need any setup instructions.
 
 However the ``riptide setup`` command supports usage notes and importing files, as you can see
-in the `User Documentation <../../user_docs/4_project.html>`_. You can also see an example project there.
+in the `User Documentation <../../user_docs/6_project.html>`_. You can also see an example project there.
 
 To add usage notes, add the following to the ``app``:
 

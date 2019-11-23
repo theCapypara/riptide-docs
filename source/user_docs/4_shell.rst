@@ -7,27 +7,17 @@ We highly recommend installing these!
 CLI Command Aliases
 ~~~~~~~~~~~~~~~~~~~
 Riptide projects may define custom commands for you to use.
-The demo project from the `previous chapter <4_project.html>`_ for example
-defines a ``mysql`` command. To run it *without* the integration you have to execute::
+Take for example a command called ``mysql``. To run it *without* the integration you have to execute::
 
   $ riptide cmd mysql -e "DESCRIBE Hello;"
-  mysql: [Warning] Using a password on the command line interface can be insecure.
-  +-------+--------------+------+-----+---------+-------+
-  | Field | Type         | Null | Key | Default | Extra |
-  +-------+--------------+------+-----+---------+-------+
-  | World | varchar(255) | YES  |     | NULL    |       |
-  +-------+--------------+------+-----+---------+-------+
 
 If the shell integration is enabled, you can just run the command like you would any
 other shell command::
 
   $ mysql -e "DESCRIBE Hello;"
-  mysql: [Warning] Using a password on the command line interface can be insecure.
-  +-------+--------------+------+-----+---------+-------+
-  | Field | Type         | Null | Key | Default | Extra |
-  +-------+--------------+------+-----+---------+-------+
-  | World | varchar(255) | YES  |     | NULL    |       |
-  +-------+--------------+------+-----+---------+-------+
+
+.. warning:: We highly recommend using the shell integration.
+             The ``riptide cmd`` command does not support passing all arguments and options.
 
 Install the integration
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -46,7 +36,7 @@ You need to re-open your terminals for the integration to be enabled (or source 
              the full path to ``riptide.hook.bash``. You can get that by calling ``which riptide.hook.bash``.
              The same applies for the zsh integration.
 
-.. note:: If you want to try these commands out yourself using the demo project,
+.. note:: If you want to try these commands out yourself using the demo project from the following chapters,
           you may need to start the database first: ``riptide start -s db``.
 
 .. warning:: Whenever you set up a project for the first time,

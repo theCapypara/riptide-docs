@@ -181,8 +181,5 @@ If you need to view these notes again run ``riptide notes``. This will show you 
 the general usage notes, that may contain things you need to do after importing an existing project,
 and installation notes, for starting from scratch.
 
-Please follow the next pages of this guide to setup
-Bash and Zsh integration and the Proxy Server.
-
 If you want to import databases or files later on, see `Managing Databases <db.html>`_
 and `Importing Files <import.html>`_.
