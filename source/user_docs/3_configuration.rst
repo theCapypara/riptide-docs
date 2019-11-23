@@ -13,10 +13,6 @@ Leave everything on default for now, individual settings will be explained below
 After creating the configuration file using this command, Riptide CLI is now ready to use!
 Continue to the next chapters to learn how to use it with a project and how to setup the Proxy Server.
 
-.. raw:: html
-
-  <script src="../_static/asciinema-player.js"></script>
-
 Proxy server configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 The configuration for the Proxy Server is described in the chapter `Proxy Server Setup <5_proxy.html>`_.

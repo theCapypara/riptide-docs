@@ -39,6 +39,7 @@ You can test if Riptide is working:
 
 .. raw:: html
 
+   <script src="../_static/asciinema-player.js"></script>
    <asciinema-player src="../_static/casts/test_riptide.cast" cols="80" rows="24"></asciinema-player>
 
 
