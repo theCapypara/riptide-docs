@@ -32,7 +32,7 @@ Installing Riptide system-wide
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. warning:: It is currently unknown if sudo must or even can be used when
-             installing Riptide system-wide. It seems on the way Python
+             installing Riptide system-wide. It seems to depend on the way Python
              is installed and also the MacOS version.
 
              Please try with sudo first and see if this works. Make sure to remember
