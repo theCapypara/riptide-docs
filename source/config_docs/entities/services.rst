@@ -40,3 +40,10 @@ Helper Functions
 .. automethod:: riptide.config.document.service.Service.config
 
 .. automethod:: riptide.config.document.service.Service.get_tempdir
+
+Helpfer Functions for configuration files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The helper functions listed here can only be used inside files used with the ``config`` setting
+of services.
+
+.. autofunction:: riptide.config.service.config_files_helper_functions.read_file

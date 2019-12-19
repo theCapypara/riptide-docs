@@ -25,3 +25,5 @@ Helper Functions
 .. automethod:: riptide.config.document.app.App.parent
 
 .. automethod:: riptide.config.document.app.App.get_service_by_role
+
+.. automethod:: riptide.config.document.app.App.get_services_by_role
