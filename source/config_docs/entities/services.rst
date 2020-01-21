@@ -23,6 +23,8 @@ Helper Functions
 
 .. automethod:: riptide.config.document.service.Service.parent
 
+.. automethod:: riptide.config.document.service.Service.system_config
+
 .. automethod:: riptide.config.document.service.Service.volume_path
 
 .. automethod:: riptide.config.document.service.Service.get_working_directory
@@ -36,8 +38,6 @@ Helper Functions
 .. automethod:: riptide.config.document.service.Service.host_address
 
 .. automethod:: riptide.config.document.service.Service.home_path
-
-.. automethod:: riptide.config.document.service.Service.config
 
 .. automethod:: riptide.config.document.service.Service.get_tempdir
 

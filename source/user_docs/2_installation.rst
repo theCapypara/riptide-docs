@@ -11,3 +11,4 @@ To install Riptide, follow the guide for your operating system.
    2a_linux.rst
    2b_macos.rst
    2c_windows.rst
+   2d_components.rst

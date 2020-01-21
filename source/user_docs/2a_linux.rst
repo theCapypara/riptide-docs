@@ -25,15 +25,11 @@ There is a good chance you already have Python installed. Try running ``python3 
 Installing Riptide system-wide
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To install all common Riptide components and the Docker implementation run the following command::
+To install all Riptide components and the Docker implementation run the following command::
 
-  $ sudo pip3 install riptide-proxy riptide-cli riptide-engine-docker
+  $ sudo pip3 install riptide-all
 
 Make sure this command is run with sudo!
-
-If you use databases, you may need to install additional components, called database drivers::
-
-  $ sudo pip3 install riptide-db-mysql # MySQL
 
 You can test if Riptide is working:
 
