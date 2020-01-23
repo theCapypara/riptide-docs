@@ -6,10 +6,15 @@ This guide will explain how to install Riptide under Windows.
 .. note:: Windows is not supported as well as the Linux setup. Most of the downsides
           of Riptide on Windows come from the Docker Desktop implementation for Windows.
 
+          Riptide has some `Performance optimizations`_ to increase
+          the performance on Windows, but it will still be slower than running it on Linux.
+
           Also we can not offer any Windows specific support at the moment.
 
           If you have experience with Docker or Python on Windows, we'd love your support in making
           Riptide on Windows even better!
+
+.. _Performance optimizations:  performance_optimizations.html
 
 Installing Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,13 +32,9 @@ There is a good chance you already have Python installed. Try running ``python3 
 Installing Riptide system-wide
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To install all common Riptide components and the Docker implementation run the following command::
+To install all Riptide components and the Docker implementation run the following command::
 
-  $ pip3 install riptide-proxy riptide-cli riptide-engine-docker
-
-If you use databases, you may need to install additional components, called database drivers::
-
-  $ pip3 install riptide-db-mysql # MySQL
+  $ pip3 install riptide-all
 
 You can test if Riptide is working:
 
@@ -73,9 +74,11 @@ Known issues under Windows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Riptide currently uses the default Docker Desktop Windows daemon. This setup is known
-  to have significantly worse performance than the Linux version.
-- Due to the performance issues, when importing databases the first import attempt
-  might fail. Please try again in this case.
+  to have significantly worse performance than the Linux version. Riptide has some
+  `Performance optimizations`_ to increase performance.
+- Due to the performance optimization settings, it might happen that changes to files
+  are not immediately visible on the host system or the running containers. Some files
+  are not updated on the host system at all (see `Performance optimizations`_).
 
 .. note:: If you are a Windows developer and want to improve this situation, please contact us.
           A possible solution for the perfomance issues may be something like a

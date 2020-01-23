@@ -21,3 +21,5 @@ Helper Functions
 .. include:: tpl/desc_var_helpers.rst
 
 .. automethod:: riptide.config.document.config.Config.get_config_dir
+
+.. automethod:: riptide.config.document.config.Config.get_plugin_flag

@@ -14,3 +14,5 @@ User Documentation
    user_docs/import.rst
    user_docs/log_files.rst
    user_docs/repos.rst
+   user_docs/php_debugging.rst
+   user_docs/performance_optimizations.rst

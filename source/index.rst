@@ -68,7 +68,7 @@ Documentation
    user_docs
    config_docs
    repo_docs
-   module_docs
+   plugin_development
    update_docs
 
 * :ref:`genindex`

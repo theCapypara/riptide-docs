@@ -8,8 +8,8 @@ is used to start CLI command containers.
 
 Commands can either be invoked via ``riptide cmd`` or directly via Riptide's shell integration.
 
-Since services are container definitions, they need to contain at least the name of an image to run.
-All other fields are optional.
+Commands either run as separate containers in the same container network as
+services (normal commands), or are started in running service containers.
 
 
 Schema
@@ -20,6 +20,8 @@ Schema
 .. automethod:: riptide.config.document.command.Command.schema
 
 .. automethod:: riptide.config.document.command.Command.schema_normal
+
+.. automethod:: riptide.config.document.command.Command.schema_in_service
 
 .. automethod:: riptide.config.document.command.Command.schema_alias
 
