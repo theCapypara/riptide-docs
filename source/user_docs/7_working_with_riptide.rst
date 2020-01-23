@@ -16,12 +16,13 @@ As you can see, projects with all services that have HTTP capabilities
 are listed here. You can click on a link to access the service.
 
 All service URLs have the following structure::
-  <project>(__<service>).<proxy-url>
+
+  <project>(--<service>).<proxy-url>
 
 If your service is configured to be the main service of the URL, it's url is simply
 the URL of the project (eg. ``dummy.riptide.local``). If your project has multiple
-services, than the other services are accessible by adding two underscores to the
-name of the project (eg. ``dummy__service2.riptide.local``).
+services, than the other services are accessible by adding two dashes to the
+name of the project (eg. ``dummy--service2.riptide.local``).
 
 Accessing the dummy project's hello_wold service as shown in the screenshot above,
 will present you with the autostart page of this web service:
