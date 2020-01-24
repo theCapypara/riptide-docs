@@ -32,6 +32,16 @@ Helper Functions
 
 .. automethod:: riptide.config.document.command.Command.parent
 
+.. automethod:: riptide.config.document.command.Command.system_config
+
 .. automethod:: riptide.config.document.command.Command.volume_path
 
+.. automethod:: riptide.config.document.command.Command.os_user
+
+.. automethod:: riptide.config.document.command.Command.os_group
+
+.. automethod:: riptide.config.document.command.Command.host_address
+
 .. automethod:: riptide.config.document.command.Command.home_path
+
+.. automethod:: riptide.config.document.command.Command.get_tempdir
