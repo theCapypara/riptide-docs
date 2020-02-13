@@ -11,6 +11,7 @@ To use Riptide you need to have the following installed:
 
 * Python 3.6+
 * pip for Python 3 (might come installed with Python)
+    * on Ubuntu ``sudo apt-get install python3-pip``
 * `Docker 16.0+ <https://docs.docker.com/install/>`_
     * Do **NOT** install Docker via Snap. Follow the instructions on the page linked.
     * Make sure to also follow the `post-installation steps <https://docs.docker.com/install/linux/linux-postinstall/>`_.
