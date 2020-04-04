@@ -10,7 +10,7 @@ require access to the npm cache.
 
 .. _npm: https://www.npmjs.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/npm>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/npm>`_
 
 ..  contents:: Index
     :depth: 2
@@ -23,24 +23,24 @@ Latest NPM version with the latest Node.js version.
 Additional volumes
 ~~~~~~~~~~~~~~~~~~
 
-+-----------------------+-----------------------------+---------------------------------------------+-------------+--------------------+
-| Name                  | Source                      | Source path                                 | Target path | Description        |
-+=======================+=============================+=============================================+=============+====================+
-| npm                   | Home directory              | ~/.npm                                      | ~/.npm      | NPM cache          |
-+-----------------------+-----------------------------+---------------------------------------------+-------------+--------------------+
-| npmrc                 | Home directory              | ~/.npmrc                                    | ~/.npmrc    | NPM config         |
-+-----------------------+-----------------------------+---------------------------------------------+-------------+--------------------+
-| ssh                   | Home directory              | ~/.ssh                                      | ~/.ssh      | SSH configuration  |
-+-----------------------+-----------------------------+---------------------------------------------+-------------+--------------------+
++-----------------------+-----------------------------+---------------------------------------------+-------------+-------------+
+| Name                  | Source                      | Source path                                 | Target path | Description |
++=======================+=============================+=============================================+=============+=============+
+| npm                   | Home directory              | ~/.npm                                      | ~/.npm      | NPM cache   |
++-----------------------+-----------------------------+---------------------------------------------+-------------+-------------+
+| npmrc                 | Home directory              | ~/.npmrc                                    | ~/.npmrc    | NPM config  |
++-----------------------+-----------------------------+---------------------------------------------+-------------+-------------+
 
-``/command/npm/nodeX``
+``/command/npm/node8``
 ----------------------
 
 **Based on**: /command/npm/base
 
-Latest NPM with different Node.js versions. Avaiable Node.js versions:
+NPM with Node.js version 8.
 
-- 8
-- 10
-- 11
-- 12
+``/command/npm/node10``
+-----------------------
+
+**Based on**: /command/npm/base
+
+NPM with Node.js version 10.

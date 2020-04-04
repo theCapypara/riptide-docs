@@ -5,7 +5,7 @@ Node.js
 
 `Node.js <https://nodejs.org/en/>`_ is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/node>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/node>`_
 
 ..  contents:: Index
     :depth: 2
@@ -15,16 +15,16 @@ Node.js
 
 Latest Node.js version. Change image tag for other versions.
 
-``/command/node/X``
+``/command/node/8``
 -------------------
 
 **Based on**: /command/node/base
 
-Different Node.jS versions. Available versions:
+Node.js version 8.
 
-- 8
-- 10
-- 11
-- 12
+``/command/node/10``
+--------------------
 
-Other versions can be used by changing the version of the image.
+**Based on**: /command/node/base
+
+Node.js version 10.

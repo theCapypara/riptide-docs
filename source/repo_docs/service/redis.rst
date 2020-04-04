@@ -7,7 +7,7 @@ Redis_ is an open source, in-memory data structure store, used as a database, ca
 
 .. _Redis: https://redis.io/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/redis>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/redis>`_
 
 ..  contents:: Index
     :depth: 2

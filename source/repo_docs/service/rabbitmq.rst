@@ -7,7 +7,7 @@ RabbitMQ_ message broker.
 
 .. _RabbitMQ: https://www.rabbitmq.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/rabbitmq>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/rabbitmq>`_
 
 ..  contents:: Index
     :depth: 2
