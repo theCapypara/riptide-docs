@@ -7,7 +7,7 @@ Varnish_ Cache is an HTTP caching server.
 
 .. _Varnish: https://varnish-cache.org/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/varnish>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/varnish>`_
 
 ..  contents:: Index
     :depth: 2
