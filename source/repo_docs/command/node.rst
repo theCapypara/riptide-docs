@@ -5,7 +5,7 @@ Node.js
 
 `Node.js <https://nodejs.org/en/>`_ is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/node>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/node>`_
 
 ..  contents:: Index
     :depth: 2

@@ -13,7 +13,7 @@ There are variants for PHP 7.1 - 7.3 and one that uses the configuration of the 
 .. _Apache: https://httpd.apache.org/
 
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/php>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/php>`_
 
 ..  contents:: Index
     :depth: 2
