@@ -1,21 +1,21 @@
 .. AUTO-GENERATED, SEE README_CONTRIBUTORS. DO NOT EDIT.
 
-Yarn
-====
+NPM
+===
 
 Yarn_ Node.js package manager.
 
 This command template can also be used for other Node.js commands (by changing the command), if they
 require access to the yarn cache.
 
-.. _yarn: https://yarnpkg.com/
+.. _npm: https://yarnpkg.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/yarn>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/yarn>`_
 
 ..  contents:: Index
     :depth: 2
 
-``/command/yarn/base``
+``/command/npm/base``
 ----------------------
 
 Latest Yarn version with the latest Node.js version.
@@ -33,8 +33,8 @@ Additional volumes
 | ssh                   | Home directory              | ~/.ssh                                      | ~/.ssh      | SSH configuration  |
 +-----------------------+-----------------------------+---------------------------------------------+-------------+--------------------+
 
-``/command/yarn/nodeX``
------------------------
+``/command/npm/nodeX``
+----------------------
 
 **Based on**: /command/npm/base
 

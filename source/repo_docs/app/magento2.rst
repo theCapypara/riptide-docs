@@ -9,11 +9,6 @@ The Riptide app comes with Varnish, Redis, RabbitMQ and a mail catcher.
 
 Web server is based on Nginx. The "Apache" variants contain web servers based on Apache.
 
-Uses mageconfigsync_ for configuration management, if installed. If you want to
-use mageconfigsync with Riptide create a file ``app/etc/config.yml`` with an environment ``dev``.
-
-.. _mageconfigsync: https://github.com/punkstar/mageconfigsync
-
 .. _Magento: https://magento.com/
 
 **Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/magento2>`_
@@ -69,12 +64,7 @@ Post Start
 
 Waits for ``bin/magento`` to work (= redis and db to start up).
 
-Changes settings, such as the base url.
-
-Runs mageconfigsync_ to load configuration from the ``dev`` environment from the file ``app/etc/config.yml``.
-If mageconfigsync is not installed this step silently fails.
-
-Clears cache.
+Changes settings, such as the base url, and clears cache.
 
 www
 +++
@@ -233,79 +223,50 @@ MySQL client that load's the configuration from the service with role ``db``.
 The client auto-connects to the database from this service.
 
 ``/app/magento2/apache``
-------------------------
+----------------------
 
 **Based on**: /app/magento2/base
 
 Variant of Magento using the Apache web-server instead.
 
-Services
-~~~~~~~~
 
-php
-+++
-
-**Based on**: `/service/php/7.2/apache <https://github.com/Parakoopa/riptide-repo/tree/master/service/php>`_
-
-Apache web server + PHP.
-
-Roles
-.....
-
-**Has roles**: ``src``, ``php``, ``varnish``
-
-Has access to source code (``src``), is marked as main PHP service (``php``)
-and is marked as backend server for Varnish (``varnish``).
-
-www
-+++
-
-Is removed.
-
-The apache web-server with a PHP CGI module is in the "php" service.
-
-
-``/app/magento2/ce/X``
+``/app/magento2/ce/2.3``
 ------------------------
 
 **Based on**: /app/magento2/base
 
 Configuration for different versions of Magento Open Source, version 2. Using Nginx.
 
-Available versions:
+www
++++
 
-- 2.3
+Is removed. The apache web-server with a PHP CGI module is in the PHP service.
 
-``/app/magento2/ee/X``
+php
++++
+
+**Based on**: `/service/php/7.2/apache <https://github.com/Parakoopa/riptide-repo/tree/master/service/php>`_
+
+Apache + PHP.
+
+``/app/magento2/ee/2.3``
 ------------------------
 
 **Based on**: /app/magento2/base
 
 Configuration for different versions of Magento Commerce, version 2. Using Nginx.
 
-Available versions:
 
-- 2.3
+``/app/magento2/ce/2.3-apache``
+------------------------
 
-
-``/app/magento2/ce/X-apache``
------------------------------
-
-**Based on**: /app/magento2/apache
+**Based on**: /app/magento2/base
 
 Configuration for different versions of Magento Open Source, version 2. Using Apache.
 
-Available versions:
+``/app/magento2/ee/2.3-apache``
+------------------------
 
-- 2.3
-
-``/app/magento2/ee/X-apache``
------------------------------
-
-**Based on**: /app/magento2/apache
+**Based on**: /app/magento2/base
 
 Configuration for different versions of Magento Commerce, version 2. Using Apache.
-
-Available versions:
-
-- 2.3

@@ -10,7 +10,7 @@ require access to the npm cache.
 
 .. _npm: https://www.npmjs.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/npm>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/npm>`_
 
 ..  contents:: Index
     :depth: 2

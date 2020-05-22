@@ -9,7 +9,7 @@ Client command to be used with `/service/mysql <https://github.com/Parakoopa/rip
 
 .. _MySQL: https://www.mysql.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/mysql>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/mysql>`_
 
 ..  contents:: Index
     :depth: 2
