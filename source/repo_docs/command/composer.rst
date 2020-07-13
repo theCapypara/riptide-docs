@@ -7,7 +7,7 @@ Composer_ PHP package manager.
 
 .. _Composer: https://getcomposer.org/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/composer>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/composer>`_
 
 ..  contents:: Index
     :depth: 2
