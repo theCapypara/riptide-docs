@@ -9,6 +9,10 @@ The Riptide app comes with Redis and a mail catcher.
 
 Web server is based on Apache.
 
+Uses mageconfigsync_ for configuration management, if installed. If you want to
+use mageconfigsync with Riptide create a file ``app/etc/config.yml`` with an environment ``dev``.
+
+.. _mageconfigsync: https://github.com/punkstar/mageconfigsync
 .. _Magento: https://magento.com/
 
 **Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/magento1>`_
@@ -62,6 +66,9 @@ Post Start
 ..........
 
 Waits for ``magerun db:info`` to work (= db to start up).
+
+Runs mageconfigsync_ to load configuration from the ``dev`` environment from the file ``app/etc/config.yml``.
+If mageconfigsync is not installed this step silently fails.
 
 Clears cache.
 

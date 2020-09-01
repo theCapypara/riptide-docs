@@ -8,7 +8,7 @@ of applications.
 
 .. _Mailhog: https://github.com/mailhog/MailHog
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/mailhog>`_
+**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/mailhog>`_
 
 ..  contents:: Index
     :depth: 2
