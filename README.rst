@@ -11,6 +11,7 @@
     *Container-Backends:*   engine_docker_
     *Database Drivers:*     db_mysql_            db_mongo_
     *Plugins:*              php_xdebug_
+    *Kubernetes:*           k8s_client_          k8s_controller_
     *Related Projects:*     configcrunch_
     *More:*                 **docs**             repo_                docker_images_
     ======================  ===================  ===================  ===================
@@ -26,6 +27,8 @@
 .. _repo:           https://github.com/Parakoopa/riptide-repo
 .. _docker_images:  https://github.com/Parakoopa/riptide-docker-images
 .. _php_xdebug:     https://github.com/Parakoopa/riptide-plugin-php-xdebug
+.. _k8s_client:     https://github.com/Parakoopa/riptide-k8s-client
+.. _k8s_controller: https://github.com/Parakoopa/riptide-k8s-controller
 
 |docs| |slack|
 
