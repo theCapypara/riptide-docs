@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Riptide'
-copyright = '2019, Marco Köpcke'
+copyright = '2021, Marco Köpcke'
 author = 'Marco Köpcke'
 
 # The short X.Y version
