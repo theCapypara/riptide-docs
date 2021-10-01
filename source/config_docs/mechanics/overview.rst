@@ -14,7 +14,8 @@ Riptide's configuration is made up of a hierarchy of entities (also called objec
 
 The currently loaded configuration is based on the `system configuration`_ under
 "`<CONFIG> <../index.html#Riptide-config-files>`_/config.yml" and the currently loaded project_, which
-is read from a "riptide.yml".
+is read from a ``riptide.yml``. Additionally, if a ``riptide.local.yml`` exists, it's contents
+are merged on top of the ``riptide.yml``.
 
 Projects contain an App_, which contains Services_ and Commands_. And so the configuration forms a hierarchy of different entities:
 
