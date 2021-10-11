@@ -3,7 +3,10 @@
 Projects
 --------
 
-Projects represent one web development project. They are loaded from ``riptide.yml`` files.
+Projects represent one web development project.
+
+They are loaded from ``riptide.yml`` files. Additionally, if a ``riptide.local.yml`` exists, it's contents
+are merged on top of the ``riptide.yml``.
 
 A project consists of one `app <./apps.html>`_.
 
