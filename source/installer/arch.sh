@@ -3,7 +3,7 @@
 URL=${URL-https://the-live-url.de}
 
 source <(curl ${URL}/common.sh)
-DEPENDENCIES=("base-devel" "libcap")
+DEPENDENCIES=("base-devel" "libcap" "git")
 DOCKER_DEPENDENCIES=("docker")
 
 function getPackageSearchCommand() {
@@ -11,7 +11,7 @@ function getPackageSearchCommand() {
 }
 
 function getPackageInstallCommand() {
-    printf "sudo pacman -S --noconfirm %s" "${1}"
+    printf "sudo pacman -Syu --noconfirm %s" "${1}"
 }
 
 run
