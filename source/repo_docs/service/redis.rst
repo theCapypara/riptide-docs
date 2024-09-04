@@ -9,8 +9,6 @@ Redis_ is an open source, in-memory data structure store, used as a database, ca
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/redis>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/redis/base``
 --------------------------

@@ -9,8 +9,6 @@ nginx_ web server.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/nginx>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/nginx/latest``
 -------------------------

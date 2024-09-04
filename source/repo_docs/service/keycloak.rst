@@ -7,8 +7,6 @@ Open Source Identity and Access Management
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/keycloak>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/keycloak/base``
 -------------------------

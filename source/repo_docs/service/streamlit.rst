@@ -7,8 +7,6 @@ Streamlit Service.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/streamlit>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/streamlit/base``
 -------------------------

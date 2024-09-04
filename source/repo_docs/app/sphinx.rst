@@ -11,8 +11,6 @@ written by Georg Brandl and licensed under the BSD license.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/sphinx>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/sphinx/latest``
 ----------------------

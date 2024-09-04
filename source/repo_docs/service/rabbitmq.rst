@@ -9,8 +9,6 @@ RabbitMQ_ message broker.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/rabbitmq>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/rabbitmq/base``
 --------------------------

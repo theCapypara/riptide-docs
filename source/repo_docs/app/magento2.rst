@@ -18,8 +18,6 @@ use mageconfigsync with Riptide create a file ``app/etc/config.yml`` with an env
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/magento2>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/magento2/base``
 ----------------------
