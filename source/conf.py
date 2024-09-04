@@ -189,5 +189,5 @@ epub_exclude_files = ['search.html']
 todo_include_todos = True
 
 def setup(sphinx):
-    sphinx.add_stylesheet('asciinema-player.css')
-    sphinx.add_stylesheet('admonition-variable-helper.css')
+    sphinx.add_css_file('asciinema-player.css')
+    sphinx.add_css_file('admonition-variable-helper.css')
