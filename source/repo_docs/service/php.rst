@@ -5,7 +5,7 @@ php
 
 PHP_ scripting language. Uses the `riptidepy/php <https://hub.docker.com/r/riptidepy/php>`_ images.
 
-There are variants for PHP 7.1 - 7.4.
+There are variants for PHP 7.1 - 8.3.
 Some include the Apache web server (``apache`` variants), others include php-fpm (``php-fpm`` variants) and some only the interpreter (``cli`` variants).
 
 .. _PHP: https://php.net/
@@ -13,7 +13,7 @@ Some include the Apache web server (``apache`` variants), others include php-fpm
 .. _PhpStorm path mapping key: https://blog.jetbrains.com/phpstorm/2012/03/new-in-4-0-easier-debugging-of-remote-php-command-line-scripts/
 .. _Apache: https://httpd.apache.org/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/php>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/php>`_
 
 ..  contents:: Index
     :depth: 2
@@ -51,10 +51,10 @@ Environment variables
 +------------------+-----------+-----------------------------------------------------------------------+-----------------------------------------------------+-------------------------------+
 | Key              | Required? | Already set?                                                          | Example Value(s)                                    | Description                   |
 +==================+===========+=======================================================================+=====================================================+===============================+
-| XDEBUG_CONFIG    | no        | yes, (default: "remote_host={{ host_address() }}")                    | remote_host={{ host_address() }                     | Configuration for Xdebug_     |
-+------------------+-----------+-----------------------------------------------------------------------+-----------------------------------------------------+-------------------------------+
 | PHP_IDE_CONFIG   | no        | yes, (default: "serverName=riptide-{{ parent().parent().name }}")     | serverName=riptide-{{ parent().parent().name }}     | `PhpStorm path mapping key`_  |
 +------------------+-----------+-----------------------------------------------------------------------+-----------------------------------------------------+-------------------------------+
+
+Note: ``XDEBUG_CONFIG`` that was present here before was removed. The config set there has been moved to the xdebug.ini. Add additional information via PHP INI files.
 
 Config
 ~~~~~~
@@ -89,23 +89,23 @@ Environment variables
 | APACHE_RUN_GROUP | yes       | yes, (default: "#{{ os_group() }}")                                   | #{{ os_group() }}, www-data, #1000                  | Group to run Apache as        |
 +------------------+-----------+-----------------------------------------------------------------------+-----------------------------------------------------+-------------------------------+
 
-``/service/php/7.1/apache``, ``/service/php/7.2/apache``, ``/service/php/7.3/apache``, ``/service/php/7.4/apache``
-------------------------------------------------------------------------------------------------------------------
+``/service/php/X.X/apache``
+---------------------------
 
 **Based on**: /service/php/base-apache
 
-Variant that contains the Apache_ web server and integrates the PHP CGI module. PHP 7.1 - 7.3.
+Variant that contains the Apache_ web server and integrates the PHP CGI module.
 
-``/service/php/7.1/cli``, ``/service/php/7.2/cli``, ``/service/php/7.3/cli``, ``/service/php/7.4/cli``
-------------------------------------------------------------------------------------------------------
+``/service/php/X.X/cli``
+------------------------
 
 **Based on**: /service/php/base
 
 Variant that only contains the PHP interpreter. PHP 7.1 - 7.3.
 
-``/service/php/7.1/fpm``, ``/service/php/7.2/fpm``, ``/service/php/7.3/fpm``, ``/service/php/7.4/fpm``
-------------------------------------------------------------------------------------------------------
+``/service/php/X.X/fpm``
+------------------------
 
 **Based on**: /service/php/base
 
-Variant that contains PHP-FPM. PHP 7.1 - 7.3.
+Variant that contains PHP-FPM.

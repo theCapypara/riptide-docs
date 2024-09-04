@@ -7,7 +7,7 @@ nginx_ web server.
 
 .. _nginx: https://www.nginx.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/nginx>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/nginx>`_
 
 ..  contents:: Index
     :depth: 2

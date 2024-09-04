@@ -14,7 +14,7 @@ The template provided is tested for Elasticsearch 6.
 
 .. _Elasticsearch: https://www.elastic.co
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/service/elasticsearch>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/elasticsearch>`_
 
 ..  contents:: Index
     :depth: 2

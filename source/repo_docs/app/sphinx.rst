@@ -9,7 +9,7 @@ written by Georg Brandl and licensed under the BSD license.
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
 .. _sphinx-autobuild: https://pypi.org/project/sphinx-autobuild/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/sphinx>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/sphinx>`_
 
 ..  contents:: Index
     :depth: 3

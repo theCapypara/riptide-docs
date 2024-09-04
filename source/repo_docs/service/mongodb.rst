@@ -7,7 +7,7 @@ MySQL_ relational database management system.
 
 .. _MySQL: https://www.mysql.com/
 
-**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/mysql>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/mongodb>`_
 
 ..  contents:: Index
     :depth: 2

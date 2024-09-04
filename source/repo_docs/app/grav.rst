@@ -11,7 +11,7 @@ Comes with a default user (name: ``riptide``, password ``12345``).
 
 .. _Grav: https://getgrav.org/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/grav>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/grav>`_
 
 ..  contents:: Index
     :depth: 3
