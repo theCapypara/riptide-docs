@@ -12,8 +12,6 @@ require access to the yarn cache.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/yarn>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/command/yarn/base``
 ----------------------

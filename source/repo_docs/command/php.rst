@@ -15,8 +15,6 @@ There are variants for PHP 7.1 - 7.3 and one that uses the configuration of the 
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/php>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/command/php/base``
 ----------------------

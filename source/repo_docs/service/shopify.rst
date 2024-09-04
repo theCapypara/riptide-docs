@@ -7,8 +7,6 @@ Shopify Service for Shopify E-commerce software app.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/shopify>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/shopify/base``
 -------------------------

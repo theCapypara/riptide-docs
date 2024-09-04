@@ -12,8 +12,6 @@ Run ``riptide start``, then check ``STREAMLIT.md``.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/streamlit>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/base``
 -------------

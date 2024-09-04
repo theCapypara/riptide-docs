@@ -11,8 +11,6 @@ Client command to be used with `/service/mysql <https://github.com/Parakoopa/rip
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/mysql>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/command/mysql/from-service-db``
 ----------------------------------
