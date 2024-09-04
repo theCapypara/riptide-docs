@@ -15,7 +15,7 @@ use mageconfigsync with Riptide create a file ``app/etc/config.yml`` with an env
 .. _mageconfigsync: https://github.com/punkstar/mageconfigsync
 .. _Magento: https://magento.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/magento1>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/magento1>`_
 
 ..  contents:: Index
     :depth: 3

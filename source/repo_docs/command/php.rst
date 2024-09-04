@@ -13,7 +13,7 @@ There are variants for PHP 7.1 - 7.3 and one that uses the configuration of the 
 .. _Apache: https://httpd.apache.org/
 
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/php>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/php>`_
 
 ..  contents:: Index
     :depth: 2
@@ -29,11 +29,11 @@ Environment variables
 +------------------+-----------+-----------------------------------------------------------------------+-----------------------------------------------------+-------------------------------+
 | Key              | Required? | Already set?                                                          | Example Value(s)                                    | Description                   |
 +==================+===========+=======================================================================+=====================================================+===============================+
-| XDEBUG_CONFIG    | no        | yes, (default: "remote_host={{ host_address() }}")                    | remote_host={{ host_address() }                     | Configuration for Xdebug_     |
-+------------------+-----------+-----------------------------------------------------------------------+-----------------------------------------------------+-------------------------------+
 | PHP_IDE_CONFIG   | no        | yes, (default: "serverName=riptide-{{ parent().parent().name }}")     | serverName=riptide-{{ parent().parent().name }}     | `PhpStorm path mapping key`_  |
 +------------------+-----------+-----------------------------------------------------------------------+-----------------------------------------------------+-------------------------------+
 
+Note: ``XDEBUG_CONFIG`` that was present here before was removed. Xdebug configuration are not available.
+Use the ``from-service`` variant of this command for Xdebug support.
 
 ``/command/php/X``
 ------------------
@@ -45,6 +45,11 @@ Different PHP versions. Available versions:
 - 7.1
 - 7.2
 - 7.3
+- 7.4
+- 8.0
+- 8.1
+- 8.2
+- 8.3
 
 ``/command/php/from-service``
 -----------------------------

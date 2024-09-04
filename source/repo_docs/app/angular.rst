@@ -11,7 +11,7 @@ Run ``riptide cmd npm install`` before trying to start the project.
 
 .. _Angular: https://angular.io/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/app/angular>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/angular>`_
 
 ..  contents:: Index
     :depth: 3

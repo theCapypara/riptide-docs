@@ -10,13 +10,13 @@ require access to the npm cache.
 
 .. _npm: https://www.npmjs.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/npm>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/npm>`_
 
 ..  contents:: Index
     :depth: 2
 
 ``/command/npm/base``
-----------------------
+---------------------
 
 Latest NPM version with the latest Node.js version.
 
@@ -44,3 +44,24 @@ Latest NPM with different Node.js versions. Avaiable Node.js versions:
 - 10
 - 11
 - 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
+
+``/command/npm/in-node-service``
+-----------------------------------
+
+Running ``npm`` command in the service with role ``node``.
+
+Role Requirements
+~~~~~~~~~~~~~~~~~
+
+**Role**: ``node``
+
+This command requires another service that has the role ``node`` set.

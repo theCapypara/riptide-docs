@@ -10,7 +10,7 @@ require access to the yarn cache.
 
 .. _yarn: https://yarnpkg.com/
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/yarn>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/yarn>`_
 
 ..  contents:: Index
     :depth: 2
@@ -44,3 +44,24 @@ Latest Yarn with different Node.js versions. Avaiable Node.js versions:
 - 10
 - 11
 - 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
+
+``/command/yarn/in-node-service``
+------------------------------------
+
+Running ``yarn`` command in the service with role ``node``.
+
+Role Requirements
+~~~~~~~~~~~~~~~~~
+
+**Role**: ``node``
+
+This command requires another service that has the role ``node`` set.

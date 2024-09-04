@@ -5,7 +5,7 @@ Node.js
 
 `Node.js <https://nodejs.org/en/>`_ is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-**Link to entity in repository:** `<https://github.com/Parakoopa/riptide-repo/tree/master/command/node>`_
+**Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/node>`_
 
 ..  contents:: Index
     :depth: 2
@@ -26,5 +26,26 @@ Different Node.jS versions. Available versions:
 - 10
 - 11
 - 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
 
 Other versions can be used by changing the version of the image.
+
+``/command/node/in-node-service``
+------------------------------------
+
+Running ``node`` command in the service with role ``node``.
+
+Role Requirements
+~~~~~~~~~~~~~~~~~
+
+**Role**: ``node``
+
+This command requires another service that has the role ``node`` set.
