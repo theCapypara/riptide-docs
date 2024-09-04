@@ -3,3 +3,4 @@ git+https://github.com/theCapypara/riptide-cli.git#egg=riptide-cli
 git+https://github.com/theCapypara/riptide-engine-docker.git#egg=riptide-engine_docker
 git+https://github.com/theCapypara/riptide-db-mysql.git#egg=riptide-db_mysql
 git+https://github.com/theCapypara/riptide-proxy.git@for-docs#egg=riptide-proxy
+furo

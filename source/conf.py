@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Riptide'
-copyright = '2021, Marco Köpcke'
+copyright = '2024, Marco Köpcke'
 author = 'Marco Köpcke'
 
 # The short X.Y version
@@ -65,7 +65,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "en"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -81,23 +81,8 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-## Style overrides
-import os
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
-if not on_rtd:  # only import and set the theme if we're building docs locally
-    import sphinx_rtd_theme
-    html_theme = "sphinx_rtd_theme"
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-    # CSS File is added in setup
-else:
-    html_context = {
-        'css_files': [
-            'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
-            'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-            '_static/asciinema-player.css',
-        ]
-    }
+html_theme = "furo"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -124,7 +109,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Riptidedoc'
+htmlhelp_basename = 'riptide'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -173,7 +158,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'Riptide', 'Riptide Documentation',
-     author, 'Riptide', 'One line description of project.',
+     author, 'Riptide', 'Simple container development environments',
      'Miscellaneous'),
 ]
 
