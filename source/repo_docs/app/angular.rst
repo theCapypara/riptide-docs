@@ -13,8 +13,6 @@ Run ``riptide cmd npm install`` before trying to start the project.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/angular>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/angular/base``
 ---------------------

@@ -9,8 +9,6 @@ Drupal_ Content Management System.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/drupal>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/craft/latest``
 ---------------------

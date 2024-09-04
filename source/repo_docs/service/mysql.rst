@@ -9,8 +9,6 @@ MySQL_ relational database management system.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/mysql>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/mysql/base``
 -----------------------

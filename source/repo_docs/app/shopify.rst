@@ -12,8 +12,6 @@ Run ``riptide cmd setup``, then check ``shopify-app.md`` for further steps.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/shopify>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/base``
 -------------

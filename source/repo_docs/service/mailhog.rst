@@ -10,8 +10,6 @@ of applications.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/mailhog>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/mailhog/latest``
 ---------------------------

@@ -21,8 +21,6 @@ In order to use Varnish, install the plugin Upper with default configuration.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/craft>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/craft/base``
 -------------------
@@ -82,7 +80,7 @@ Roles
 Has access to source code (``src``) and is marked as main PHP service (``php``). 
 It is the backend for Varnish (``varnish``).
 
-Environment variables starting with CEXTRA_ passed to this service will be added to the very
+Environment variables starting with ``CEXTRA_`` passed to this service will be added to the very
 end of the generated .env file.
 
 Config

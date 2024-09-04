@@ -16,8 +16,6 @@ The template provided is tested for OpenSearch 1.2.0.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/opensearch>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/opensearch/latest``
 ---------------------------------

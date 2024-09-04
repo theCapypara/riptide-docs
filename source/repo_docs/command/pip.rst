@@ -9,8 +9,6 @@ PIP
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/pip>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/command/pip/in-python-service``
 ---------------------------------------

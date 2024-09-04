@@ -9,8 +9,6 @@ Composer_ PHP package manager.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/composer>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/command/composer/base``
 --------------------------

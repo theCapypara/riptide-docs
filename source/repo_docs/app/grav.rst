@@ -13,8 +13,6 @@ Comes with a default user (name: ``riptide``, password ``12345``).
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/grav>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/grav/base``
 ------------------
