@@ -1,7 +1,7 @@
 .. cssclass:: no-admonition-variable-helper
 
-Commands
---------
+Command
+-------
 
 A command is the specification for a container that can be started interactively by the user. This
 is used to start CLI command containers.

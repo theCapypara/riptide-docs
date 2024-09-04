@@ -68,7 +68,7 @@ First, make sure all repositories and Docker images are up to date::
 
 You should run this command regularly to make sure your images and repositories are always up to date.
 See the `Docker documentation <https://docs.docker.com/get-started/#images-and-containers>`_ for more details on images.
-See `Using Repositories <repos.html>`_ for more information on repositories.
+See :doc:`repos` for more information on repositories.
 
 To run the first-time setup run::
 
@@ -181,5 +181,5 @@ If you need to view these notes again run ``riptide notes``. This will show you 
 the general usage notes, that may contain things you need to do after importing an existing project,
 and installation notes, for starting from scratch.
 
-If you want to import databases or files later on, see `Managing Databases <db.html>`_
-and `Importing Files <import.html>`_.
+If you want to import databases or files later on, see :doc:`db`
+and :doc:`import`.

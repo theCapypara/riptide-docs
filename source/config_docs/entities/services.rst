@@ -1,7 +1,7 @@
 .. cssclass:: no-admonition-variable-helper
 
-Services
---------
+Service
+-------
 
 A service is the definition of a software container that contains one of the applications
 required to run the entire `app <./app.html>`_.

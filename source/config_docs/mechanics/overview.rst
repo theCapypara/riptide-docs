@@ -5,12 +5,12 @@ Overview / Hierarchy
 
 Riptide's configuration is made up of a hierarchy of entities (also called objects or documents).
 
-.. _system configuration: config.html
-.. _project: projects.html
-.. _projects: projects.html
-.. _app: apps.html
-.. _services: services.html
-.. _commands: commands.html
+.. _system configuration: ../entities/config.html
+.. _project: ../entities/projects.html
+.. _projects: ../entities/projects.html
+.. _app: ../entities/apps.html
+.. _services: ../entities/services.html
+.. _commands: ../entities/commands.html
 
 The currently loaded configuration is based on the `system configuration`_ under
 "`<CONFIG> <../index.html#Riptide-config-files>`_/config.yml" and the currently loaded project_, which
@@ -181,7 +181,7 @@ Riptide will load the entity contained in the file ``service/hello-world.yml`` i
 of the repositories, that is specified in the `system configuration`_ and merge it with the
 one defined here.
 
-More information on repositories can be found under `"How Repositories work" <../using_repo/how_repositories.html>`_.
+More information on repositories can be found under :doc:`how_repositories`.
 
 Details about how documents are processed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

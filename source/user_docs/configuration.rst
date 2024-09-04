@@ -4,24 +4,19 @@ This page will show you how to edit the system configuration file of Riptide (al
 
 Initial configuration
 ~~~~~~~~~~~~~~~~~~~~~
-
-Create your system configuration file using ``riptide config-edit-user``.
-This will open an editor.
-
-Leave everything on default for now, individual settings will be explained below.
-
-After creating the configuration file using this command, Riptide CLI is now ready to use!
-Continue to the next chapters to learn how to use it with a project and how to setup the Proxy Server.
+If you haven't it done yet, create your system configuration file using ``riptide config-edit-user``.
+This will open an editor. 
+After creating the configuration file using this command, Riptide CLI is ready to use.
 
 Proxy server configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-The configuration for the Proxy Server is described in the chapter `Proxy Server Setup <5_proxy.html>`_.
+The configuration for the Proxy Server is described in the chapter :doc:`proxy`.
 
 Repository configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~
 The ``repos`` key contains a list of repositories, that are used by Riptide to look up components of projects.
 
-By default the community repository is the only repository in this list. Please see `Using Repositories <repos.html>`_ for more info.
+By default the community repository is the only repository in this list. Please see :doc:`repos`` for more info.
 
 Engine configuration
 ~~~~~~~~~~~~~~~~~~~~
@@ -34,8 +29,12 @@ You can use the command ``riptide config-edit-user`` to edit the configuration f
 Alternatively you can also directly edit the file
 "`<CONFIG> <../index.html#Riptide-config-files>`_/config.yml" in your favorite editor.
 
-Advanced: Resolving hostnames & /etc/hosts file
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Resolving hostnames and hosts-file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+   If you used the Linux installation script or are using NixOS, this is already taken care of.
+
 Riptide uses a proxy server to route traffic to your projects. This proxy server
 uses hostnames to route traffic. These hostnames need to be routable to your local machine.
 

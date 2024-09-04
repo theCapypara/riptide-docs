@@ -16,11 +16,16 @@ other shell command::
 
   $ mysql -e "DESCRIBE Hello;"
 
-.. warning:: We highly recommend using the shell integration.
-             The ``riptide cmd`` command does not support passing all arguments and options.
+We highly recommend using the shell integration. 
+The ``riptide cmd`` command does not support passing all arguments and options.
 
 Install the integration
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note::
+   If you used the Linux installation script this is already done for you.
+
+   If you are on :doc:`/installation/linux_nixos` or use :doc:`/installation/macos_nix_darwin`, see their setup pages for more information instead.
 
 If you are using **Bash**, add the following line to your ``.bashrc``::
 
@@ -35,9 +40,6 @@ You need to re-open your terminals for the integration to be enabled (or source 
 .. warning:: When using Riptide inside a virtualenv, you need to replace ``riptide.hook.bash`` with
              the full path to ``riptide.hook.bash``. You can get that by calling ``which riptide.hook.bash``.
              The same applies for the zsh integration.
-
-.. note:: If you want to try these commands out yourself using the demo project from the following chapters,
-          you may need to start the database first: ``riptide start -s db``.
 
 .. warning:: Whenever you set up a project for the first time,
              you need to exit and re-enter the project directory to use the commands.

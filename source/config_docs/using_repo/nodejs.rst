@@ -60,7 +60,7 @@ Create a ``riptide.yml`` with the following contents:
         name: js-helloworld
         services:
           nodejs:
-            image: node:10
+            image: node:20-bullseye
             command: 'node index.js'
             port: 3000
             roles:
@@ -97,9 +97,9 @@ Add the following under ``app`` in the ``riptide.yml``:
 
     commands:
       node:
-        $ref: /command/node/10
+        $ref: /command/node/20
       npm:
-        $ref: /command/npm/node10
+        $ref: /command/npm/node20
 
 This adds two new commands, one containing NodeJS and one containing npm. All npm processes
 started will also have access to the directory ``.npm`` in your home directory and your ``.npmrc``.

@@ -65,6 +65,7 @@ Documentation
 .. toctree::
    :maxdepth: 2
 
+   installation
    user_docs
    config_docs
    repo_docs

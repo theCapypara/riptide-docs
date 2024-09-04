@@ -2,7 +2,7 @@ PHP Hello World
 ---------------
 This section will guide you through the setup of a simple PHP project using the Riptide repository.
 
-We will use an Apache web server, the other guide (`PHP with Database, Redis and Composer <./php_complex.html>`_) shows how to use an Nginx server.
+We will use an Apache web server, the other guide (:doc:`php_complex`) shows how to use an Nginx server.
 
 This guide assumes you have Riptide fully set up, with shell integration enabled
 and a running proxy server
@@ -40,7 +40,7 @@ Create a ``riptide.yml`` with the following contents:
         name: php-helloworld
         services:
           php:
-            $ref: /service/php/7.2/apache
+            $ref: /service/php/8.3/apache
             roles:
               - src
               - main
@@ -52,7 +52,7 @@ This project_ contains an app_ called ``php-helloworld``.
 This app_ has one service_ called ``php``. This service_ is the container specification for our Hello World
 app.
 
-The service_ ``php`` needs Apache and PHP so we tell it to load ``/service/php/7.2/apache`` from the Riptide repository.
+The service_ ``php`` needs Apache and PHP so we tell it to load ``/service/php/8.3/apache`` from the Riptide repository.
 You can find more details and the YAML file for this on `Github <https://github.com/Parakoopa/riptide-repo/tree/master/service/php>`_.
 
 The final step is adding ``roles``. Roles define the behaviour of services.

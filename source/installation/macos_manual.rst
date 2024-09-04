@@ -1,7 +1,9 @@
-MacOS
------
+Manual MacOS Setup
+------------------
 
-This guide will explain how to install Riptide under MacOS.
+This guide will explain how to install Riptide under MacOS. If possible you may want to consider using the
+:doc:`nix-darwin setup <macos_nix_darwin>` instead. It is more experimental but much more conveniant and comes with
+more features out of the box (such as proxy autostart, which is otherwise not supported for macOS).
 
 .. note:: MacOS is not supported as well as the Linux setup. Most of the downsides
           of Riptide on MacOS come from the Docker Desktop implementation for MacOS.
@@ -20,7 +22,7 @@ Installing Requirements
 This guide assumes you want to run Riptide in the most common set-up using the Docker Engine.
 To use Riptide you need to have the following installed:
 
-* Python 3.6+
+* Python 3.8+
 * pip for Python 3 (might come installed with Python)
 * `Docker Desktop 16.0+ <https://www.docker.com/products/docker-desktop>`_
 
@@ -31,22 +33,33 @@ Python is available for Mac machines using package managers.
 
 There is a good chance you already have Python installed. Try running ``python3 --version`` to check.
 
-Installing Riptide system-wide
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Installing Riptide
+^^^^^^^^^^^^^^^^^^
+Riptide should always be installed in a dedicated Python virtual environment to avoid conflicts between system packages and Riptide.
 
-.. warning:: It is currently unknown if sudo must or even can be used when
-             installing Riptide system-wide. It seems to depend on the way Python
-             is installed and also the MacOS version.
+Choose a directory you want to store the virtualenv at, create a new virtualenv for Riptide and activate it:
 
-             Please try with sudo first and see if this works. Make sure to remember
-             if you installed with or without sudo, as you will need to update Riptide
-             the same way, see below.
+.. code-block:: bash
 
-To install all Riptide components and the Docker implementation run the following command::
+  cd ~/virtualenvs  # This can be whereever you want
+  python3 -m venv riptide
+  source riptide/bin/activate # Activates the virtualenv
 
-  $ [sudo] pip3 install riptide-all
+Then, to install all Riptide components and the Docker implementation run the following command:
 
-Sudo may or may not be required, see warning above.
+.. code-block:: bash
+
+  pip3 install riptide-all
+
+
+After this you will need to re-activate the virtualenv every time you want to use Riptide, or add the Riptide commands to the PATH:
+
+.. code-block:: bash
+
+  # We asume ~/.local/bin is in the PATH and your virtualenv is at ~/virtualenvs. You can choose other directories if not.
+  ln -s ~/virtualenvs/riptide/bin/riptide ~/.local/bin
+  ln -s ~/virtualenvs/riptide/bin/riptide_proxy ~/.local/bin
+  ln -s ~/virtualenvs/riptide/bin/upgrade_riptide ~/.local/bin
 
 You can test if Riptide is working:
 
@@ -55,22 +68,48 @@ You can test if Riptide is working:
    <script src="../_static/asciinema-player.js"></script>
    <asciinema-player src="../_static/casts/test_riptide.cast" cols="80" rows="24"></asciinema-player>
 
+You will then need to initialize the Riptide configuration if this is the first time using Riptide. If you used Riptide
+before skip this step (this will otherwise reset your configuration):
 
-Installing Riptide in a Virtualenv
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Riptide can also be installed in a Virtualenv. This is only recommended for advanced Python
-users. Please make sure, to use the correct Python interpreter of your Virtualenv when
-`setting up the proxy server <6_project.html>`_.
+Initializing the configuration
+..............................
+
+.. code-block:: bash
+
+   riptide config-edit-user --factoryreset
+
+Shell integration
+.................
+
+Riptide adds some additional features to your shell, in order to automatically add project
+commands into your shell. Add the following lines to your .zshrc after any changes to PATH:
+
+.. code-block:: zsh
+
+  . riptide.hook.zsh
+  eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
+
+.. code-block:: bash
+
+  . riptide.hook.bash
+  eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
+
+If you use Bash, add this to your .bashrc after any changes to PATH:
+
+SSL Certificate
+...............
+
+Finally you want to import the SSL certificate authority. This allows your browser to trust
+the Riptide proxy server. See :ref:`user_docs/proxy:Import the SSL certificate authority` for more details.
 
 Updating Riptide
 ~~~~~~~~~~~~~~~~
 
-To update Riptide, run
+To update Riptide, run:
 
-  $ [sudo] riptide_upgrade
+.. code-block:: bash
 
-Make sure to use or not use sudo, depending on if you did during your initial installation.
-Failing to do so, WILL break your installation.
+  riptide_upgrade
 
 Configuring shared folders
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,19 +149,12 @@ Known issues under MacOS
           `docker-sync <https://github.com/EugenMayer/docker-sync>`_ implementation
           for Riptide.
 
-Get help and join the community
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-If you need some support or just want to chat with the community, join our
-`Slack workspace <https://slack.riptide.parakoopa.de>`_.
-
 Next steps
 ~~~~~~~~~~
-The next pages of this documentation will explain
-how to finish the setup of Riptide,
-how to setup the Proxy server and
-how to install the Bash/Zsh integration.
-It will also teach you how to use the Riptide CLI and Proxy server.
+You are now ready to use Riptide. Head to the user documentation for more information on how to use it:
 
-Please make sure to read through all of the following pages of this documentation to properly
-setup Riptide.
-
+- :doc:`/user_docs/configuration`: Learn how to configure Riptide
+- :doc:`/user_docs/shell`: Learn how to use and customize the shell integration
+- :doc:`/user_docs/proxy`: Learn how to use the Proxy Server
+- :doc:`/user_docs/working_with_riptide`: Learn how to use Riptide with existing Riptide projects
+- :doc:`/user_docs/project` and :doc:`/config_docs`: Learn how to use Riptide for new projects

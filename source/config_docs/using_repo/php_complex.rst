@@ -77,7 +77,7 @@ Create a ``riptide.yml`` with the following contents:
               # Wait for php (otherwise nginx crashes) :(
               - "until ping -c5 php &>/dev/null; do :; done"
           php:
-            $ref: /service/php/7.2/fpm
+            $ref: /service/php/8.3/fpm
             roles:
               - src
               - php
