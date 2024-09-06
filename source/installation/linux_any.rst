@@ -75,9 +75,9 @@ After this you will need to re-activate the virtualenv every time you want to us
 .. code-block:: bash
 
   # We asume ~/.local/bin is in the PATH and your virtualenv is at ~/virtualenvs. You can choose other directories if not.
-  ln -s ~/virtualenvs/riptide/bin/riptide ~/.local/bin
-  ln -s ~/virtualenvs/riptide/bin/riptide_proxy ~/.local/bin
-  ln -s ~/virtualenvs/riptide/bin/upgrade_riptide ~/.local/bin
+  ln -s ~/virtualenvs/riptide/bin/riptide ~/.local/bin/riptide
+  ln -s ~/virtualenvs/riptide/bin/riptide_proxy ~/.local/bin/riptide_proxy
+  ln -s ~/virtualenvs/riptide/bin/upgrade_riptide ~/.local/bin/upgrade_riptide
 
 You can test if Riptide is working:
 

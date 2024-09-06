@@ -46,7 +46,8 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+    'myst_parser'
 ]
 autosectionlabel_prefix_document = True
 
