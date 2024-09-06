@@ -52,13 +52,6 @@ Change your ``configuration.nix`` like so:
         imports = [ "${builtins.fetchTarball "https://github.com/theCapypara/riptide-all/archive/master.tar.gz"}/nix/modules/darwin.nix" ];
     }
 
-Advanced
-^^^^^^^^
-
-Advanced users can have a closer look at the Flake file. The file contains
-an overlay that can also be used to install the packages without the module,
-on any Linux distribution running the Nix package manager.
-
 Enable Riptide
 ~~~~~~~~~~~~~~
 
