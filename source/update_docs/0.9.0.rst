@@ -8,7 +8,7 @@ Changelog
 
 - The documentation has been updated to make initial installation much easier.
 - For Linux an install script now exists to install Riptide with all dependencies and fully configure it.
-- For NixOS or nix-darwin modules exist.
+- Riptide can now be installed and configured via NixOS or nix-darwin modules.
 - Fixed some environment variables leaking into command containers, most notably XDG directory related variables.
 - Fixed that the self updater potentially uses the wrong Python environment when trying to update.
 - Fixed handling the hosts file under MacOS and Windows.
