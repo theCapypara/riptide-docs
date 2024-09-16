@@ -32,7 +32,7 @@ Change your ``flake.nix`` like so:
             # change `yourhostname` to your actual hostname
             darwinConfigurations.yourhostname = nixpkgs.lib.darwinSystem {
                 # change to your system:
-                system = "x86_64-linux";
+                system = "x86_64-darwin";
                 modules = [
                     ./configuration.nix
                     riptide.darwinModules.default
