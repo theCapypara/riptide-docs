@@ -1,3 +1,62 @@
 0.9.0
 -----
 
+Riptide 0.9 introduces improvements to installing Riptide. If coming from previous versions, please read the sections below the changelog.
+
+Changelog
+~~~~~~~~~
+
+- The documentation has been updated to make initial installation much easier.
+- For Linux an install script now exists to install Riptide with all dependencies and fully configure it.
+- For NixOS or nix-darwin modules exist.
+- Fixed some environment variables leaking into command containers, most notably XDG directory related variables.
+- Fixed that the self updater potentially uses the wrong Python environment when trying to update.
+- Fixed handling the hosts file under MacOS and Windows.
+- Proxy Server: Fixed compatibility with some WebSocket applications.
+
+Uprading
+~~~~~~~~
+The installation instructions have changed. The recommended way to install Riptide is via a virtualenv. If you were not using a virtualenv before
+(if you don't know you most likely didn't) please read on below.
+
+Linux
+^^^^^
+If you are under NixOS, you can now install Riptide as a module, see :doc:`/installation/linux_nixos`.
+
+On other Linux distributions, uninstall Riptide packages by running:
+
+.. code-block:: bash
+
+    pip3 uninstall -y riptide-all riptide-cli riptide-engine-docker riptide-db-mysql riptide-db-mongo riptide-proxy riptide-lib riptide-plugin-php-xdebug
+
+After this follow the :ref:`manual Linux installation instructions <installation/linux_any:Manual Installation>`.
+Do not use the automatic installation script. You can skip the "Shell integration" and "Systemd service" steps if you already have those set up.
+
+MacOS
+^^^^^
+First, uninstall old Riptide packages:
+
+.. code-block:: bash
+
+    pip3 uninstall -y riptide-all riptide-cli riptide-engine-docker riptide-db-mysql riptide-db-mongo riptide-proxy riptide-lib riptide-plugin-php-xdebug
+
+Then decide on how to install Riptide:
+
+- For MacOS the best working Riptide setup is now provided with nix-darwin. If you are comfortable using Nix you can use this,
+  but please note that nix-darwin itself may still be a bit unstable at this stage. The nix-darwin setup supports automatically running
+  the proxy server and supports automatically updating the hosts file. See :doc:`/installation/macos_nix_darwin` for more information.
+
+- Alternatively you can manually install Riptide like before. Follow the :doc:`manual MacOS installation instructions </installation/macos_manual>`.
+Do not use the automatic installation script. You can skip the "Shell integration" and "Systemd service" steps if you already have those set up.
+
+
+Windows
+^^^^^^^
+Uninstall the global Riptide packages by running:
+
+.. code-block:: powershell
+
+    pip3 uninstall -y riptide-all riptide-cli riptide-engine-docker riptide-db-mysql riptide-db-mongo riptide-proxy riptide-lib riptide-plugin-php-xdebug
+
+After this follow the :doc:`Windows installation instructions </installation/windows>`.
+

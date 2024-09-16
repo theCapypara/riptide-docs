@@ -30,7 +30,7 @@ To use Riptide you need to have the following installed:
 There is a good chance you already have Python installed. Try running ``python3 --version`` to check.
 
 Installing Riptide
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 Riptide should always be installed in a dedicated Python virtual environment to avoid conflicts between system packages and Riptide.
 
 Choose a directory you want to store the virtualenv at, create a new virtualenv for Riptide and activate it:
