@@ -76,6 +76,13 @@ To enable and use Riptide, use the ``services.riptide`` configuration:
         docker.enable = true;
     };
 
+    # Add yourself to the docker group.
+    users.users."YOUR USERNAME" = {
+        extraGroups = [
+            "docker"
+        ];
+    };
+
 See below for all options.
 
 Shell integration
