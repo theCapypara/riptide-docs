@@ -86,15 +86,19 @@ commands into your shell. Add the following lines to your .zshrc after any chang
 
 .. code-block:: zsh
 
+  # Riptide shell integration
   . riptide.hook.zsh
+  # Riptide code completion
   eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
+
+If you use Bash, add this to your .bashrc after any changes to PATH:
 
 .. code-block:: bash
 
+  # Riptide shell integration
   . riptide.hook.bash
+  # Riptide code completion
   eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
-
-If you use Bash, add this to your .bashrc after any changes to PATH:
 
 SSL Certificate
 ...............

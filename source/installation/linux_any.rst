@@ -3,7 +3,7 @@ Most Linux Distributions
 
 This guide will explain how to install Riptide under most Linux distributions.
 
-Auotmatic Installation
+Automatic Installation
 ~~~~~~~~~~~~~~~~~~~~~~
 You can run the following command on Ubuntu, openSUSE or Arch Linux to automatically install Riptide:
 
@@ -114,18 +114,22 @@ commands into your shell. Add the following lines to your .bashrc after any chan
 
 .. code-block:: bash
 
+  # Riptide shell integration
   . riptide.hook.bash
+  # Riptide code completion
   eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
 
 If you use ZSH, add this to your .zshrc after any changes to PATH:
 
 .. code-block:: zsh
 
+  # Riptide shell integration
   . riptide.hook.zsh
+  # Riptide code completion
   eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
 
-Sytemd service
-..............
+Systemd service
+...............
 
 Then you will need to configure the Systemd deaemon for the Riptide Proxy Server:
 
