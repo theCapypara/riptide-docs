@@ -9,8 +9,6 @@ Varnish_ Cache is an HTTP caching server.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/varnish>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/varnish/4``
 ----------------------

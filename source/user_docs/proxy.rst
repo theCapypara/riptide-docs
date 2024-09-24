@@ -12,7 +12,7 @@ Enter the hostname you want your proxy server to be accessible at there.
 
 By default Riptide will add entries to your system's hosts-file to make sure your projects
 can be routed at this address.
-See `"Advanced: Resolving hostnames & /etc/hosts file" <3_configuration.html#advanced-resolving-hostnames-etc-hosts-file>`_ for more information..
+See :ref:`user_docs/configuration:Resolving hostnames and hosts-file` for more information.
 
 If you change this address, and have hosts-file management enabled, you may need to run
 any command of the Riptide CLI to update the hosts-file with the new domains.
@@ -34,8 +34,25 @@ You can also disable HTTPS by setting the value for ``https`` to ``false``.
 Do this if you want to run the proxy server behind a reverse proxy with SSL
 termination.
 
-Starting the Proxy Server
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Start the Proxy on system boot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You may want to start the proxy server automatically whenever you log in, this
+section describes how to do so for different platforms.
+
+To do this, please read the appropriate section for your platform:
+
+- :doc:`/installation/windows`
+- :doc:`/installation/linux_any`
+- :doc:`/installation/linux_nixos`
+- :doc:`/installation/macos_nix_darwin`
+
+Other platforms
+^^^^^^^^^^^^^^^
+There is no info on how to do this on other platforms here yet. Please start the
+proxy server manually as described below. 
+
+Starting the Proxy Server manually
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 How to start the proxy server depends on your system.
 
 Linux, ports <= 1024
@@ -74,81 +91,6 @@ the proxy server as your current user without sudo or an Administrator Command L
 
 After starting the proxy server head over to the URL you configured for the
 proxy server and you should see a landing page for the proxy server.
-
-Start the Proxy on system boot
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-You may want to start the proxy server automatically whenever you log in, this
-section describes how to do so for different platforms.
-
-Linux, ports <= 1024 (Systemd)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-When using the proxy server with ports below 1024, the server needs to be run as root.
-This means for autostart it has to be configured as a system level service.
-
-Create the following unit file under ``/etc/systemd/system/riptide.service``::
-
-  [Unit]
-  Description=Riptide
-
-  [Service]
-  ExecStart=<PROXY> --user=<USERNAME>
-  Restart=on-failure
-
-  [Install]
-  WantedBy=multi-user.target
-
-You need to replace ``<USERNAME>`` with your username and ``<PROXY>`` with the
-full path to the proxy executable which you can get by calling ``which riptide_proxy``.
-
-After that you need to reload the Systemd daemon::
-
-  sudo systemctl daemon-reload
-
-To enable autostart::
-
-  sudo systemctl enable riptide
-
-To start the proxy server right away::
-
-  sudo systemctl start riptide
-
-Linux, ports > 1024 (Systemd)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-When using ports above 1024 it is best to configure the proxy server as a user level unit.
-This means that the proxy server is directly bound to your user account and will autostart
-on login.
-
-Create the following unit file under ``~/.config/systemd/user/riptide.service``::
-
-  [Unit]
-  Description=Riptide
-
-  [Service]
-  ExecStart=<PROXY>
-  Restart=on-failure
-
-  [Install]
-  WantedBy=default.target
-
-You need to replace ``<PROXY>`` with the full path to the proxy executable
-which you can get by calling ``which riptide_proxy``.
-
-After that you need to reload the Systemd daemon::
-
-  sudo systemctl daemon-reload
-
-To enable autostart::
-
-  systemctl --user enable riptide
-
-To start the proxy server right away::
-
-  systemctl --user start riptide
-
-Other platforms
-^^^^^^^^^^^^^^^
-There is no info on how to do this on other platforms here yet. Please start the
-proxy server manually as described above.
 
 Running the Proxy Server behind Nginx or Apache
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

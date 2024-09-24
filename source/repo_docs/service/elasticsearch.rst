@@ -16,8 +16,6 @@ The template provided is tested for Elasticsearch 6.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/elasticsearch>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/elasticsearch/latest``
 ---------------------------------

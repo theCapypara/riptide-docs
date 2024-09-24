@@ -9,8 +9,6 @@ Poetry
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/poetry>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/command/poetry/in-python-service``
 ---------------------------------------

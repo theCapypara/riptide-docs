@@ -12,8 +12,6 @@ Run ``riptide start``, then check ``JUPYTER.md``.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/app/jupyter>`_
 
-..  contents:: Index
-    :depth: 3
 
 ``/app/base``
 -------------

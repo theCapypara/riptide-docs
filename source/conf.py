@@ -45,8 +45,11 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
-    'sphinx.ext.coverage'
+    'sphinx.ext.coverage',
+    'sphinx.ext.autosectionlabel',
+    'myst_parser'
 ]
+autosectionlabel_prefix_document = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -77,6 +80,8 @@ pygments_style = None
 
 
 # -- Options for HTML output -------------------------------------------------
+
+html_title = "Riptide"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -136,7 +141,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Riptide.tex', 'Riptide Documentation',
+    (master_doc, 'Riptide.tex', 'Riptide',
      'Marco Köpcke', 'manual'),
 ]
 
@@ -146,7 +151,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'riptide', 'Riptide Documentation',
+    (master_doc, 'riptide', 'Riptide',
      [author], 1)
 ]
 

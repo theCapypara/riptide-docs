@@ -7,8 +7,6 @@ Node.js
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/command/node>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/command/node/base``
 ----------------------

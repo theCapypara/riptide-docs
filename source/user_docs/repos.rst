@@ -11,7 +11,7 @@ repositories. If, for example, the ``app`` entry contains a ``$ref`` entry with 
 for the App by searching for ``app/demo.yml`` inside all your configured repositories.
 The ``app/demo.yml`` is loaded as your App and then the contents under ``app`` in the project's ``riptide.yml`` are merged together.
 
-More information about repositories, can be found in the `configuration guide <../config_docs/mechanics/how_repositories.html>`_.
+More information about repositories, can be found under :doc:`/config_docs/mechanics/how_repositories`.
 
 You can change repositories by running ``riptide config-user-edit``. Repositories are defined as a list under the ``repo`` key.
 Riptide repositories are Git repositories. Enter the clone-URLs for your repositories there.

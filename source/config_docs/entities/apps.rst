@@ -1,7 +1,7 @@
 .. cssclass:: no-admonition-variable-helper
 
-Apps
-----
+App
+---
 
 An app defines all the different services (sub-applications) and commands that are required
 to run a web development project for a specific framework or application.

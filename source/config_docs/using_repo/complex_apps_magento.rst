@@ -32,9 +32,9 @@ To create a project, create a new file named ``riptide.yml`` with the following 
       name: magento-demo
       src: src
       app:
-        $ref: /app/magento2/ce/2.3
+        $ref: /app/magento2/ce/2.4-opensearch
 
-This file defines a project_ named ``magento-demo``. The project uses the app_ ``/app/magento2/ce/2.3``
+This file defines a project_ named ``magento-demo``. The project uses the app_ ``/app/magento2/ce/2.4-opensearch``
 from the Riptide repository (`Github <https://github.com/Parakoopa/riptide-repo/tree/master/app/magento2>`_).
 
 We choose the ``src`` directory to install Magento in.
@@ -43,7 +43,7 @@ The Magento 2 app comes with PHP-FPM, Nginx, Varnish, MySQL, Redis, RabbitMQ and
 The default configuration should be suited for most needs, but the next steps of this guide
 will also show you, how to customize your Magento 2 installation.
 
-You can change the version (``2.3``) if you want to install another Magento version.
+You can change the version (``2.4``) if you want to install another Magento version.
 
 The default database name is ``magento2``, the user is ``root`` and the password ``magento2``.
 If you want to change these settings, you have to change the database driver configuration for the
@@ -55,7 +55,7 @@ If you want to change these settings, you have to change the database driver con
       name: magento-demo
       src: src
       app:
-        $ref: /app/magento2/ce/2.3
+        $ref: /app/magento2/ce/2.4-opensearch
         services:
           db:
             driver:
@@ -78,49 +78,12 @@ the following message will be displayed to you::
 
     > NEW PROJECT
     Okay! Riptide can't guide you through the installation automatically.
-    Please read these notes on how to run a first-time-installation for magento2-ce-2.3.
+    Please read these notes on how to run a first-time-installation for magento2-ce-2.4.
 
     Installation instructions:
          To install Magento run the following commands on the command line:
-
-          # 0. Download the Magento source code (replace with 'enterprise-edition' if you want):
-          mkdir -p <project_directory_root>/src
-          cd <project_directory_root>/src
-          riptide cmd composer create-project --repository=https://repo.magento.com/ --ignore-platform-reqs magento/project-community-edition ./
-
-          # 1. Dump the autoloader
-          cd ./
-          riptide cmd composer dump-autoload
-
-          # 2. Start the database and redis
-          riptide start -s redis,db
-
-          # 3. Install Magento using the CLI.
-          riptide cmd magento setup:install \
-            --base-url=https://magento-demo.riptide.local/ \
-            --db-host=db \
-            --db-name=demo \
-            --db-user=root  \
-            --db-password=demo \
-            --admin-firstname=Admin \
-            --admin-lastname=Admin \
-            --admin-email=email@yourcompany.com \
-            --admin-user=admin \
-            --admin-password=admin123 \
-            --language=en_US \
-            --currency=USD \
-            --timezone=America/Chicago \
-            --use-rewrites=1
-
-          # 3. (Optional) install sample data
-          riptide cmd magento sampledata:deploy
-
-          # 4. Run setup:upgrade
-          riptide restart -s redis
-          riptide cmd magento setup:upgrade
-
-        You can change the settings in step 3 to your likings, see the installation guide at
-          https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html
+        
+         ...
 
 These instructions may vary for you. Follow the instructions shown to you to set up your shop.
 
@@ -212,7 +175,7 @@ or ``commands`` in the project file:
       name: magento-demo
       src: src
       app:
-        $ref: /app/magento2/ce/2.3
+        $ref: /app/magento2/ce/2.4-opensearch
         services:
           db:
             driver:
@@ -220,7 +183,7 @@ or ``commands`` in the project file:
                 password: demo
                 database: demo
           styleguide:
-            image: node:8
+            image: node:20
             roles:
               - src
             working_directory: styleguide
@@ -232,9 +195,9 @@ or ``commands`` in the project file:
               - node_modules/.bin/gulp build
         commands:
           node:
-            $ref: /command/node/8
+            $ref: /command/node/20
           npm:
-            $ref: /command/npm/node8
+            $ref: /command/npm/node20
 
 Configuration management
 ~~~~~~~~~~~~~~~~~~~~~~~~

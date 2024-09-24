@@ -1,7 +1,7 @@
 .. cssclass:: no-admonition-variable-helper
 
-Projects
---------
+Project
+-------
 
 Projects represent one web development project.
 

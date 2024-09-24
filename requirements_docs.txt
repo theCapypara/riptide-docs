@@ -4,3 +4,4 @@ git+https://github.com/theCapypara/riptide-engine-docker.git#egg=riptide-engine_
 git+https://github.com/theCapypara/riptide-db-mysql.git#egg=riptide-db_mysql
 git+https://github.com/theCapypara/riptide-proxy.git@for-docs#egg=riptide-proxy
 furo
+myst-parser

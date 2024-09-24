@@ -7,8 +7,6 @@ Jupyter Service for python notebooks.
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/jupyter>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/jupyter/base``
 -------------------------

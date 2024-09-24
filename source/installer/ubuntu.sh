@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-URL=${URL-https://the-live-url.de}
+URL=https://raw.githubusercontent.com/theCapypara/riptide-docs/master/source/installer/common.sh
 source <(curl ${URL}/common.sh)
 
 DEPENDENCIES=("libcap-dev" "python3-dev" "python3-venv" "build-essential")

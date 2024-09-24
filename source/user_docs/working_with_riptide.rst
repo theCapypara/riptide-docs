@@ -142,7 +142,7 @@ You CAN NOT access files on your machine that are outside of the ``src`` directo
 Under normal circumstances, this will be no problem. When you start commands and are inside the project ``src``-folder you can access files like normal,
 because Riptide will automatically run the command in the correct directory inside the container.
 
-However **you can not use any paths that are outside the project's ``src`` directory**.
+However **you can not use any paths that are outside the project's src directory**.
 
 Let's take the following example: We have a directory tree like so::
 

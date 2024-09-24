@@ -15,8 +15,6 @@ Some include the Apache web server (``apache`` variants), others include php-fpm
 
 **Link to entity in repository:** `<https://github.com/theCapypara/riptide-repo/tree/master/service/php>`_
 
-..  contents:: Index
-    :depth: 2
 
 ``/service/php/base``
 ---------------------

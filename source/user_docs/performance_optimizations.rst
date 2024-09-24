@@ -9,8 +9,7 @@ Riptide also has some fixed built-in performance optimizations for specific plat
 Configurable Performance Optimizations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These performance optimizations can be toggled in the
-`Riptide system configuration <../config_docs/entities/config.html>`_ (``riptide config-edit-user``).
+These performance optimizations can be toggled in the :doc:`/config_docs/entities/config` (``riptide config-edit-user``).
 
 They are found under the ``performance`` key. The default value for all settings is ``auto``, which means
 that Riptide will automatically decide, of the performance option should be enabled or not.
@@ -27,12 +26,12 @@ Please consult the documentation of the engine, on how to do that.
 “auto” enables this feature on Mac and Windows, when using the Docker container backend.
 
 Switching this setting on or off breaks existing volumes. They need to be migrated manually.
-See `Update notes for version 0.5.0 <../update_docs/0.5.0.html>`_
+See Update notes for version :doc:`/update_docs/0.5.0`
 
 Do not synchronize unimportant paths with the host system (dont_sync_unimportant_src)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Normally all Commands and Services get access to the entire source directory of a project as volume.
-If this setting is enabled, ``unimportant_paths`` that are defined in the `App <../config_docs/entities/app.html>`_ are not updated on the
+If this setting is enabled, ``unimportant_paths`` that are defined in the :doc:`/config_docs/entities/apps` are not updated on the
 host system when changed by the volume. This means changes to these files are not available,
 but file access speeds may be drastically increased on some platforms.
 
