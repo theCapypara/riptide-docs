@@ -30,7 +30,7 @@ On other Linux distributions, uninstall Riptide packages by running:
     sudo pip3 uninstall -y riptide-all riptide-cli riptide-engine-docker riptide-db-mysql riptide-db-mongo riptide-proxy riptide-lib riptide-plugin-php-xdebug
 
 After this follow the :ref:`manual Linux installation instructions <installation/linux_any:Manual Installation>`.
-Do not use the automatic installation script. You can skip the "Shell integration" and "Systemd service" steps if you already have those set up.
+Do not use the automatic installation script. You can skip the "Shell integration" step if you already have that set up.
 
 MacOS
 ^^^^^
