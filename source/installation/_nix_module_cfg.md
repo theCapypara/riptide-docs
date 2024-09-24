@@ -101,7 +101,7 @@ submodule
 
 
 
-Whether to enable Enable this package\.
+Whether to enable this package\.
 
 
 
@@ -163,7 +163,7 @@ submodule
 
 
 
-Whether to enable Enable this package\.
+Whether to enable this package\.
 
 
 
@@ -345,7 +345,7 @@ submodule
 
 
 
-Whether to enable Enable this package\.
+Whether to enable this package\.
 
 
 
