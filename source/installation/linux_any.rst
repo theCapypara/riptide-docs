@@ -78,6 +78,18 @@ After this you will need to re-activate the virtualenv every time you want to us
   ln -s ~/virtualenvs/riptide/bin/riptide ~/.local/bin/riptide
   ln -s ~/virtualenvs/riptide/bin/riptide_proxy ~/.local/bin/riptide_proxy
   ln -s ~/virtualenvs/riptide/bin/upgrade_riptide ~/.local/bin/upgrade_riptide
+  ln -s ~/virtualenvs/riptide/bin/riptide.hook.bash ~/.local/bin/riptide.hook.bash
+  ln -s ~/virtualenvs/riptide/bin/riptide.hook.zsh ~/.local/bin/riptide.hook.zsh
+
+If you do not have a ``~/.local/bin`` in your ``PATH`` and have no other suitable location, you can add ``~/.local/bin`` to the ``PATH`` by 
+adding the following somewhere at the **top** of your ``.bashrc`` (before any of the Riptide shell integration; see below):
+
+.. code-block:: bash
+
+  export PATH=~/.local/bin:$PATH
+
+Same thing applies if using ZSH, use the ``.zshrc`` instead. You can also use the ``.profile`` or ``.bash_profile`` or similiar files instead.
+Please see your distributions documentation for more info.
 
 You can test if Riptide is working:
 
