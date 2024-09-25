@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-URL=https://raw.githubusercontent.com/theCapypara/riptide-docs/master/source/installer/common.sh
+URL=https://raw.githubusercontent.com/theCapypara/riptide-docs/master/source/installer
 source <(curl ${URL}/common.sh)
 
 DEPENDENCIES=("package libcap-devel" "pattern devel_basis")
