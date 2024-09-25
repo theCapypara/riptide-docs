@@ -68,11 +68,11 @@ You can test if Riptide is working:
    <script src="../_static/asciinema-player.js"></script>
    <asciinema-player src="../_static/casts/test_riptide.cast" cols="80" rows="24"></asciinema-player>
 
-You will then need to initialize the Riptide configuration if this is the first time using Riptide. If you used Riptide
-before skip this step (this will otherwise reset your configuration):
-
 Initializing the configuration
 ..............................
+
+You will then need to initialize the Riptide configuration if this is the first time using Riptide. If you used Riptide
+before skip this step (this will otherwise reset your configuration):
 
 .. code-block:: bash
 
