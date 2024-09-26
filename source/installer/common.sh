@@ -44,7 +44,7 @@ WantedBy=multi-user.target
 
 EOF
 
-UNIT_FILE='riptide_proxy.service'
+UNIT_FILE='riptide.service'
 UNIT_PATH='/etc/systemd/system'
 
 ##
