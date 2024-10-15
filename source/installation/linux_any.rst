@@ -78,6 +78,7 @@ After this you will need to re-activate the virtualenv every time you want to us
   ln -s ~/virtualenvs/riptide/bin/riptide ~/.local/bin/riptide
   ln -s ~/virtualenvs/riptide/bin/riptide_proxy ~/.local/bin/riptide_proxy
   ln -s ~/virtualenvs/riptide/bin/riptide_upgrade ~/.local/bin/riptide_upgrade
+  ln -s ~/virtualenvs/riptide/bin/riptide.hook.common.sh ~/.local/bin/riptide.hook.common.sh
   ln -s ~/virtualenvs/riptide/bin/riptide.hook.bash ~/.local/bin/riptide.hook.bash
   ln -s ~/virtualenvs/riptide/bin/riptide.hook.zsh ~/.local/bin/riptide.hook.zsh
 
