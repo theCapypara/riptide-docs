@@ -1,0 +1,15 @@
+[submodule "packages/lib"]
+	path = packages/lib
+	url = https://github.com/theCapypara/riptide-lib
+[submodule "packages/cli"]
+	path = packages/cli
+	url = https://github.com/theCapypara/riptide-cli
+[submodule "packages/engine-docker"]
+	path = packages/engine-docker
+	url = https://github.com/theCapypara/riptide-engine-docker
+[submodule "packages/db-mysql"]
+	path = packages/db-mysql
+	url = https://github.com/theCapypara/riptide-db-mysql
+[submodule "packages/proxy"]
+	path = packages/proxy
+	url = https://github.com/theCapypara/riptide-proxy
