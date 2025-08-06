@@ -1,6 +1,0 @@
-Advanced Topics
----------------
-
-.. toctree::
-
-   components

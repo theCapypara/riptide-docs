@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Riptide'
-copyright = '2024, Marco Köpcke'
+copyright = '2025, Marco Köpcke'
 author = 'Marco Köpcke'
 
 # The short X.Y version
@@ -44,10 +44,41 @@ extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.viewcode',
     'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.autosectionlabel',
-    'myst_parser'
+    'myst_parser',
+    'sphinx_design',
+    'sphinx_design_elements',
+    'autodoc2'
+]
+myst_enable_extensions = [
+    'deflist',
+    'colon_fence'
+]
+autodoc2_packages = [
+    {
+        "path": "../packages/cli/riptide_cli",
+        "auto_mode": False,
+    },
+    {
+        "path": "../packages/lib/riptide",
+        "auto_mode": False,
+    },
+    {
+        "path": "../packages/db-mysql/riptide_db_mysql",
+        "auto_mode": False,
+    },
+    {
+        "path": "../packages/engine-docker/riptide_engine_docker",
+        "auto_mode": False,
+    },
+    {
+        "path": "../packages/proxy/riptide_proxy",
+        "auto_mode": False,
+    },
+]
+autodoc2_docstring_parser_regexes = [
+    [".*", "rst"],
 ]
 autosectionlabel_prefix_document = True
 
@@ -57,8 +88,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'
@@ -74,9 +104,6 @@ language = "en"
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-
-# The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -195,4 +222,3 @@ todo_include_todos = True
 
 def setup(sphinx):
     sphinx.add_css_file('asciinema-player.css')
-    sphinx.add_css_file('admonition-variable-helper.css')
