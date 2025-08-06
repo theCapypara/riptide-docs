@@ -76,6 +76,8 @@ To update Riptide, run:
 riptide_upgrade
 ```
 
+After this make sure to restart the Proxy server. 
+
 ## Configuring shared drives
 
 When installing Riptide on a drive other than C:, or when using projects from other drives,

@@ -110,6 +110,8 @@ To update Riptide, run:
 riptide_upgrade
 ```
 
+After this make sure to restart the Proxy server. 
+
 ## Configuring shared folders
 
 Docker Desktop for MacOS only allows the virtual machine running the Docker daemon

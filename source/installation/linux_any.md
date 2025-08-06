@@ -188,6 +188,13 @@ To update Riptide, run:
 riptide_upgrade
 ```
 
+After this make sure to restart the Proxy server. How you do this depends on the installation method
+used, most commonly this can be achieved by running:
+
+```bash
+sudo systemctl restart riptide
+```
+
 ## Next steps
 
 You are now ready to use Riptide. Head to the user documentation for more information on how to use it:
