@@ -36,7 +36,7 @@ This will do the same things as the automatic installer.
 This guide assumes you want to run Riptide in the most common set-up using the Docker Engine.
 To use Riptide you need to have the following installed:
 
-- Python 3.8+
+- Python 3.11+
 - pip for Python 3 (might come installed with Python)
   : - on Ubuntu `sudo apt-get install python3-pip`
 - [Docker 16.0+](https://docs.docker.com/install/)
