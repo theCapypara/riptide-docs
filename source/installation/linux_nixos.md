@@ -44,12 +44,6 @@ Change your `configuration.nix` like so:
 }
 ```
 
-### Advanced
-
-Advanced users can have a closer look at the Flake file. The file contains
-an overlay that can also be used to install the packages without the module,
-on any Linux distribution running the Nix package manager.
-
 ## Enable Riptide
 
 To enable and use Riptide, use the `services.riptide` configuration:
