@@ -1,4 +1,18 @@
-# ![Riptide](logo.png)
+<h1>
+
+```{image} logo.png
+:alt: Riptide
+:class: only-light
+:width: 300px
+```
+
+```{image} logo_dark.png
+:alt: Riptide
+:class: only-dark
+:width: 300px
+```
+
+</h1>
 
 Riptide is a set of tools to manage development environments for web applications.
 It's using container virtualization tools, such as [Docker](https://www.docker.com/)
