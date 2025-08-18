@@ -1,4 +1,3 @@
-# ![Riptide](https://riptide-docs.readthedocs.io/en/latest/_images/logo.png)
 <h1>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://riptide-docs.readthedocs.io/en/latest/_images/logo_dark.png">
