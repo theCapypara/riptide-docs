@@ -124,7 +124,7 @@ commands into your shell. Add the following lines to your .bashrc after any chan
 # Riptide shell integration
 . riptide.hook.bash
 # Riptide code completion
-eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
+eval "$(_RIPTIDE_COMPLETE=bash_source riptide)"
 ```
 
 If you use ZSH, add this to your .zshrc after any changes to PATH:
@@ -133,7 +133,7 @@ If you use ZSH, add this to your .zshrc after any changes to PATH:
 # Riptide shell integration
 . riptide.hook.zsh
 # Riptide code completion
-eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
+eval "$(_RIPTIDE_COMPLETE=zsh_source riptide)"
 ```
 
 #### Systemd service

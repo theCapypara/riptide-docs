@@ -62,13 +62,13 @@ Riptide has limited experimental autocomplete support.
 To enable it for **Bash**, add the following line to your `.bashrc`:
 
 ```
-eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
+eval "$(_RIPTIDE_COMPLETE=bash_source <full_path_to_riptide>)"
 ```
 
 To enable it for **Zsh**, add the following line to your `.zshrc`:
 
 ```
-eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
+eval "$(_RIPTIDE_COMPLETE=zsh_source <full_path_to_riptide>)"
 ```
 
 Replace `<full_path_to_riptide>` with the full path to the `riptide` command.
@@ -76,8 +76,3 @@ On Mac and Linux you can get this path by executing `which riptide`.
 
 You need to re-open your terminals or source the rc-file inside them
 for the integration to be enabled.
-
-:::{warning}
-When using Riptide inside a virtualenv, you need to replace `riptide` with
-the full path to `riptide`. You can get that by calling `which riptide`.
-:::

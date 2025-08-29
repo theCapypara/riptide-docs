@@ -273,7 +273,7 @@ function initEnvironment() {
     fi
     if ! grep -q '_RIPTIDE_COMPLETE' ${BASHRC}; then
         printf "Adding bash completion to %s\n" "${BASHRC}"
-        printf 'eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"\n' >> ${BASHRC}
+        printf 'eval "$(_RIPTIDE_COMPLETE=bash_source riptide)"\n' >> ${BASHRC}
     fi
 
     if [[ -e ${ZSHRC} ]]; then
@@ -288,7 +288,7 @@ function initEnvironment() {
         fi
         if ! grep -q '_RIPTIDE_COMPLETE' ${ZSHRC}; then
             printf "Adding bash completion to %s\n" "${ZSHRC}"
-            printf 'eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"\n' >> ${ZSHRC}
+            printf 'eval "$(_RIPTIDE_COMPLETE=zsh_source riptide)"\n' >> ${ZSHRC}
         fi
     fi
 
