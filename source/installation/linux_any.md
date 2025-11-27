@@ -39,9 +39,10 @@ To use Riptide you need to have the following installed:
 - Python 3.11+
 - pip for Python 3 (might come installed with Python)
   : - on Ubuntu `sudo apt-get install python3-pip`
-- [Docker 16.0+](https://docs.docker.com/install/)
+- [Docker](https://docs.docker.com/install/) or Podman (or anything else CLI & API compatible with Docker)
   : - Do **NOT** install Docker via Snap. Follow the instructions on the page linked.
     - Make sure to also follow the [post-installation steps](https://docs.docker.com/install/linux/linux-postinstall/).
+    - Rootless containers, including Podman by default, are generally not as well supported and may cause some issues for some services and commands.
 - [python-prctl](https://github.com/seveas/python-prctl) requirements:
   : - on Ubuntu: `sudo apt-get install build-essential libcap-dev`
     - on Fedora: `sudo yum install gcc glibc-devel libcap-devel`

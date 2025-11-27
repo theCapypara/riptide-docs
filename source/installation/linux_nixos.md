@@ -36,13 +36,7 @@ Change your `flake.nix` like so:
 
 ### Via `fetchTarball`
 
-Change your `configuration.nix` like so:
-
-```nix
-{
-    imports = [ "${builtins.fetchTarball "https://github.com/theCapypara/riptide-all/archive/master.tar.gz"}/nix/modules/nixos.nix" ];
-}
-```
+This is currently not supported. Please use Flakes or get in touch if you need this.
 
 ## Enable Riptide
 

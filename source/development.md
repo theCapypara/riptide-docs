@@ -1,6 +1,6 @@
 # Development
 
-### Repositories
+## Repositories
 
 Riptide consists of multiple Python packages and Git repositories listed below:
 
@@ -30,6 +30,7 @@ php-xdebug=riptide_plugin_php_xdebug.plugin:PhpXdebugPlugin
 Replace `php-xdebug` with the identifier of your plugin and the rest
 with the entry point of your plugin, implementing AbstractPlugin (see below).
 
+(riptide-plugins)=
 ### Plugin Interface
 
 ```{autodoc2-object} riptide.plugin.abstract.AbstractPlugin

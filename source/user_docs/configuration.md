@@ -27,7 +27,7 @@ The entry under `engine` defines which container engine implementation is used. 
 You can use the command `riptide config-edit-user` to edit the configuration file.
 
 Alternatively you can also directly edit the file
-"[\<CONFIG>](../index)/config.yml" in your favorite editor.
+"[\<CONFIG>](project:#config-files)/config.yml" in your favorite editor.
 
 ## Resolving hostnames and hosts-file
 
@@ -52,7 +52,15 @@ Replace `<YOUR USERNAME>` with your username.
 If you don't want to change permissions to the file, you can instead add these entries manually.
 If Riptide can't update the file, it will prompt you with a message, whenever it needs updating:
 
-```{image} /_static/img/guide_hosts_warning.png
+```ansi-console
+[33m╭─[0m[33m Warning [0m[33m───────────────────────────────────────────────────────────────────────────[0m[33m─╮[0m
+[33m│[0m Could not update the hosts-file (/etc/hosts) to configure proxy server routing.      [33m│[0m
+[33m│[0m > Give your user permission to edit this file, to remove this warning.               [33m│[0m
+[33m│[0m > If you wish to manually add the entries instead, add the following entries to      [33m│[0m
+[33m│[0m /etc/hosts:                                                                          [33m│[0m
+[33m│[0m 127.0.0.1       riptide.local                                                        [33m│[0m
+[33m│[0m                                                                                      [33m│[0m
+[33m╰──────────────────────────────────────────────────────────────────────────────────────╯[0m
 ```
 
 ### Manual routing

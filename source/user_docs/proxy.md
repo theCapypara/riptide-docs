@@ -65,7 +65,7 @@ proxy will automatically drop all it's privileges to the user executing sudo.
 To start the server in this scenario:
 
 ```
-$ sudo riptide_proxy
+$ sudo riptide_proxy --user marco
 Was running as root. Changing user to marco.
 Starting Riptide Proxy on HTTPS port 443
 Starting Riptide Proxy on HTTP port 80
@@ -192,7 +192,7 @@ warning every time you restart the proxy server or enter a different project.
 ### Location
 
 The CA file is located under
-"[\<CONFIG>](../index)/riptide_proxy/ca.pem".
+"[\<CONFIG>](project:#config-files)/riptide_proxy/ca.pem".
 
 The file is created on the first startup of the proxy server. You can also place
 your own CA file here.

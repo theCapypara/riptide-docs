@@ -1,5 +1,7 @@
 furo>=2025.7.19
+sphinx>=7.2
 sphinx_design
 myst-parser
 sphinx-design-elements
 sphinx-autodoc2
+click_extra[pygments]

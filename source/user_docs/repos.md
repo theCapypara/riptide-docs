@@ -18,5 +18,5 @@ Riptide repositories are Git repositories. Enter the clone-URLs for your reposit
 You can update (pull) the current contents of all repositories by running `riptide update`.
 This command also updates all project images.
 
-The repositories are stored in the "[\<CONFIG>](../index)/repos" folder.
+The repositories are stored in the "[\<CONFIG>](project:#config-files)/repos" folder.
 Since they are ordinary Git repositories you can pull and push repositories that are stored there.

@@ -1,8 +1,7 @@
 # MacOS via nix-darwin
 
 If you are using [nix-darwin](https://github.com/LnL7/nix-darwin) you can install Riptide on macOS using
-a nix-darwin module. This allows much greater functionality to be supported than with the manual setup, however
-nix-darwin is overall still somewhat experimental.
+a nix-darwin module. This allows much greater functionality to be supported than with the manual setup.
 
 This module is provided via a Flake in the [riptide-all](https://github.com/theCapypara/riptide-all)
 repository.
@@ -40,13 +39,7 @@ Change your `flake.nix` like so:
 
 ### Via `fetchTarball`
 
-Change your `configuration.nix` like so:
-
-```nix
-{
-    imports = [ "${builtins.fetchTarball "https://github.com/theCapypara/riptide-all/archive/master.tar.gz"}/nix/modules/darwin.nix" ];
-}
-```
+This is currently not supported. Please use Flakes or get in touch if you need this.
 
 ## Enable Riptide
 

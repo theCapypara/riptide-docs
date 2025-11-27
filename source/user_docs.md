@@ -17,6 +17,7 @@ user_docs/working_with_riptide
 user_docs/db
 user_docs/import
 user_docs/log_files
+user_docs/hooks
 user_docs/repos
 user_docs/php_debugging
 user_docs/performance_optimizations

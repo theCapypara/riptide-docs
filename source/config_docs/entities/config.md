@@ -3,7 +3,7 @@
 The system configuration is the main configuration file that defines global behaviour for Riptide,
 such as the proxy server configuration.
 
-It is located under "[\<CONFIG>](../../index)/config.yml".
+It is located under "[\<CONFIG>](project:#config-files)/config.yml".
 
 ## Schema
 

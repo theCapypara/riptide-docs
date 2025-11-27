@@ -49,6 +49,7 @@ extensions = [
     'myst_parser',
     'sphinx_design',
     'sphinx_design_elements',
+    "click_extra.sphinx",
     'autodoc2'
 ]
 myst_enable_extensions = [
