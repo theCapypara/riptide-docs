@@ -20,6 +20,7 @@ To use Riptide you need to have the following installed:
 - pip for Python 3 (might come installed with Python)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
+(install-windows)=
 ## Installing Riptide
 
 Riptide should always be installed in a dedicated Python virtual environment to avoid conflicts between system packages and Riptide.
@@ -61,6 +62,7 @@ riptide config-edit-user --factoryreset
 Finally you want to import the SSL certificate authority. This allows your browser to trust
 the Riptide proxy server. See {ref}`user_docs/proxy:Import the SSL certificate authority` for more details.
 
+(upgrade-windows)=
 ## Updating Riptide
 
 To update Riptide, run:

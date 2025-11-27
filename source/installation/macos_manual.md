@@ -17,6 +17,7 @@ Python is available for Mac machines using package managers.
 
 There is a good chance you already have Python installed. Try running `python3 --version` to check.
 
+(install-macos)=
 ### Installing Riptide
 
 Riptide should always be installed in a dedicated Python virtual environment to avoid conflicts between system packages and Riptide.
@@ -86,6 +87,7 @@ eval "$(_RIPTIDE_COMPLETE=bash_source riptide)"
 Finally you want to import the SSL certificate authority. This allows your browser to trust
 the Riptide proxy server. See {ref}`user_docs/proxy:Import the SSL certificate authority` for more details.
 
+(upgrade-macos)=
 ## Updating Riptide
 
 To update Riptide, run:
