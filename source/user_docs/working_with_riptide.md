@@ -51,7 +51,15 @@ SQL software accordingly.
 To view the additional ports for a project, run `riptide status` after the services
 have been started:
 
-```{image} /_static/img/guide_ports.png
+```ansi-console
+╭─ Status ─────────────────────────────────────────────────────────────────────────────╮
+│ Services                                                                             │
+│ ├── [32m▶ db[0m                                                                             │
+│ │   └── 🌊 Additional Ports:                                                         │
+│ │       └── Port MySQL Port ([4m3306[0m) reachable on localhost:[4m3308[0m                       │
+│ └── [32m▶ hello_world[0m                                                                    │
+│     └── 🌐 Web: [4mhttps://dummy.riptide.kirschbaum.fritz.box[0m                           │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 ## Running CLI commands
@@ -67,8 +75,8 @@ To list them run `riptide cmd`:
 
 ```
 $ riptide cmd
-  Commands:
-      - mysql
+Commands
+└── mysql
 ```
 
 To run a command, simply execute it on the shell (you need to be inside the project directory):
@@ -86,12 +94,6 @@ to leave and re-enter the project to use commands.
 :::
 
 :::{warning}
-Piping (`|`, `<`, `>`) is not supported for Riptide commands.
-If you need to pipe input, you may be able to run the command directly
-in the shell of a service.
-:::
-
-:::{warning}
 The `--help` flag does not work as expected when running commands with
 `riptide cmd`, it will always show the help for
 `riptide cmd` instead. Please set up the shell integration if you need
@@ -104,12 +106,12 @@ You can start and stop services on the CLI by using the `start`, `restart`
 and `stop` commands. You can pass the `-s` flag to only affect certain services
 (comma separated):
 
-```
+```ansi-console
 $ riptide stop -s hello_world,db
-Stopping services...
-
-hello_world: 2/3|██████████████████████████████████▋                 | Stopping...
-db         : 3/3|████████████████████████████████████████████████████| Stopped!
+╭─ Stopping services... ───────────────────────────────────────────────────────────────╮
+│ db            [38;2;114;156;32m━━━━━━━━━━━━━━━━━━━━[0m [35m3/3[0m Stopped!                                      │
+│ hello_world [32m⠇[0m [38;2;249;38;114m━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━[0m [35m2/3[0m Stopping...                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 To view the names and status of all services run `riptide status`.
@@ -121,24 +123,19 @@ you would run other commands. This may be needed if you want to debug the servic
 when using NodeJS you can configure this with the debugger of your IDE to start and stop
 your application service via the IDE and have it attach it's debugger.
 
-To run a service in foreground use `start-fg`. In this example a service named `varnish` is run in foreground:
+To run a service in foreground use `start-fg`. In this example a service named `hello_world` is run in foreground:
 
-```
-$ riptide start-fg -s www varnish
-(1/3) Starting other services...
-Starting services...
-
-www: 2/2|██████████████████████████████████████████| Already started!
-
-(2/3) Stopping varnish...
-Stopping services...
-
-varnish: 3/3|██████████████████████████████████████| Stopped!
-
-(3/3) Starting in varnish foreground mode...
-bind(): Cannot assign requested address
-child (37) Started
-Child (37) said Child starts
+```ansi-console
+[92m== [0m[1;39m([0m[1;39m1[0m[39m/[0m[1;39m3[0m[1;39m)[0m[39m Starting other services[0m[39m...[0m [92m====================================================[0m
+╭─ Starting services... ───────────────────────────────────────────────────────────────╮
+│ db   [38;2;114;156;32m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [35m5/5[0m Started!                                      │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+[92m== [0m[1;39m([0m[1;39m2[0m[39m/[0m[1;39m3[0m[1;39m)[0m[39m Stopping hello_world[0m[39m...[0m [92m=======================================================[0m
+[2K[1A[2K[1A[2K╭─ Stopping services... ───────────────────────────────────────────────────────────────╮
+│ hello_world   [38;2;114;156;32m━━━━━━━━━━━━━━━━━━━━[0m [35m2/2[0m Already stopped!                              │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+[92m== [0m[1;39m([0m[1;39m3[0m[39m/[0m[1;39m3[0m[1;39m)[0m[39m Starting in hello_world foreground mode[0m[39m...[0m [92m====================================[0m
+Serving HTTP on 0.0.0.0 port 80 ...
 ```
 
 Please note that some service options are ignored when running a service interactively:
@@ -178,7 +175,7 @@ The `src` setting is set to `.`, meaning that all commands and services have the
 
 Because of this, the following will work as expected. `my_command` will be able to access `a_file`:
 
-```
+```bash
 $ pwd
 /home/me/my_projects/project
 $ riptide cmd my_command a_file
@@ -188,7 +185,7 @@ $ riptide cmd my_command /src/a_file
 
 However the following will **NOT** work. `my_command` will find neither `a_file` nor `b_file`:
 
-```
+```bash
 $ pwd
 /home/me/my_projects/project
 $ riptide cmd my_command /home/me/my_projects/project/a_file

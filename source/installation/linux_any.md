@@ -36,12 +36,13 @@ This will do the same things as the automatic installer.
 This guide assumes you want to run Riptide in the most common set-up using the Docker Engine.
 To use Riptide you need to have the following installed:
 
-- Python 3.8+
+- Python 3.11+
 - pip for Python 3 (might come installed with Python)
   : - on Ubuntu `sudo apt-get install python3-pip`
-- [Docker 16.0+](https://docs.docker.com/install/)
+- [Docker](https://docs.docker.com/install/) or Podman (or anything else CLI & API compatible with Docker)
   : - Do **NOT** install Docker via Snap. Follow the instructions on the page linked.
     - Make sure to also follow the [post-installation steps](https://docs.docker.com/install/linux/linux-postinstall/).
+    - Rootless containers, including Podman by default, are generally not as well supported and may cause some issues for some services and commands.
 - [python-prctl](https://github.com/seveas/python-prctl) requirements:
   : - on Ubuntu: `sudo apt-get install build-essential libcap-dev`
     - on Fedora: `sudo yum install gcc glibc-devel libcap-devel`
@@ -50,6 +51,7 @@ Python is available using package managers.
 
 There is a good chance you already have Python installed. Try running `python3 --version` to check.
 
+(install-linux)=
 ### Installing Riptide
 
 Riptide should always be installed in a dedicated Python virtual environment to avoid conflicts between system packages and Riptide.
@@ -124,7 +126,7 @@ commands into your shell. Add the following lines to your .bashrc after any chan
 # Riptide shell integration
 . riptide.hook.bash
 # Riptide code completion
-eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
+eval "$(_RIPTIDE_COMPLETE=bash_source riptide)"
 ```
 
 If you use ZSH, add this to your .zshrc after any changes to PATH:
@@ -133,7 +135,7 @@ If you use ZSH, add this to your .zshrc after any changes to PATH:
 # Riptide shell integration
 . riptide.hook.zsh
 # Riptide code completion
-eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
+eval "$(_RIPTIDE_COMPLETE=zsh_source riptide)"
 ```
 
 #### Systemd service
@@ -180,6 +182,7 @@ sudo systemctl start riptide
 Finally you want to import the SSL certificate authority. This allows your browser to trust
 the Riptide proxy server. See {ref}`user_docs/proxy:Import the SSL certificate authority` for more details.
 
+(upgrade-linux)=
 ## Updating Riptide
 
 To update Riptide, run:

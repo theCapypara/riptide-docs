@@ -49,6 +49,7 @@ extensions = [
     'myst_parser',
     'sphinx_design',
     'sphinx_design_elements',
+    "click_extra.sphinx",
     'autodoc2'
 ]
 myst_enable_extensions = [
@@ -115,6 +116,7 @@ html_title = "Riptide"
 #
 
 html_theme = "furo"
+html_favicon = 'logo.ico'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

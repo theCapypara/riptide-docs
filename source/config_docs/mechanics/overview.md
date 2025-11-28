@@ -3,7 +3,7 @@
 Riptide's configuration is made up of a hierarchy of entities (also called objects or documents).
 
 The currently loaded configuration is based on the [system configuration] under
-"[\<CONFIG>](../../index)/config.yml" and the currently loaded [project], which
+"[\<CONFIG>](project:#config-files)/config.yml" and the currently loaded [project], which
 is read from a `riptide.yml`. Additionally, if a `riptide.local.yml` exists, it's contents
 are merged on top of the `riptide.yml`.
 

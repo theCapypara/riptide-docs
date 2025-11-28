@@ -36,19 +36,7 @@ Change your `flake.nix` like so:
 
 ### Via `fetchTarball`
 
-Change your `configuration.nix` like so:
-
-```nix
-{
-    imports = [ "${builtins.fetchTarball "https://github.com/theCapypara/riptide-all/archive/master.tar.gz"}/nix/modules/nixos.nix" ];
-}
-```
-
-### Advanced
-
-Advanced users can have a closer look at the Flake file. The file contains
-an overlay that can also be used to install the packages without the module,
-on any Linux distribution running the Nix package manager.
+This is currently not supported. Please use Flakes or get in touch if you need this.
 
 ## Enable Riptide
 

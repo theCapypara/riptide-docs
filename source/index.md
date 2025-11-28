@@ -1,4 +1,18 @@
-# ![Riptide](logo.png)
+<h1>
+
+```{image} logo.png
+:alt: Riptide
+:class: only-light
+:width: 300px
+```
+
+```{image} logo_dark.png
+:alt: Riptide
+:class: only-dark
+:width: 300px
+```
+
+</h1>
 
 Riptide is a set of tools to manage development environments for web applications.
 It's using container virtualization tools, such as [Docker](https://www.docker.com/)
@@ -42,6 +56,7 @@ After the setup head over to `http://hello-world.riptide.local` (assuming you ar
 using the default configuration and DNS is set up). The Service will auto-start
 and after that you will be greeted with the message: `Hello from hello_world`.
 
+(config-files)=
 ## Riptide config files
 
 If you need to edit the Riptide configuration files, here are the paths on where to find them:

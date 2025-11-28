@@ -6,4 +6,5 @@ entities/projects
 entities/apps
 entities/services
 entities/commands
+entities/hooks
 ```

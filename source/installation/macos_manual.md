@@ -1,38 +1,23 @@
 # Manual MacOS Setup
 
 This guide will explain how to install Riptide under MacOS. If possible you may want to consider using the
-{doc}`nix-darwin setup <macos_nix_darwin>` instead. It is more experimental but much more conveniant and comes with
+{doc}`nix-darwin setup <macos_nix_darwin>` instead. It is more convenient and comes with
 more features out of the box (such as proxy autostart, which is otherwise not supported for macOS).
-
-:::{note}
-MacOS is not supported as well as the Linux setup. Most of the downsides
-of Riptide on MacOS come from the Docker Desktop implementation for MacOS.
-
-Riptide has some [Performance optimizations] to increase
-the performance on Mac, but it will still be slower than running it on Linux.
-
-If you have experience with Docker or Python on MacOS, we'd love your support in making
-Riptide on MacOS even better!
-:::
 
 ## Installing Requirements
 
 This guide assumes you want to run Riptide in the most common set-up using the Docker Engine.
 To use Riptide you need to have the following installed:
 
-- Python 3.8+
+- Python 3.11+
 - pip for Python 3 (might come installed with Python)
-- [Docker Desktop 16.0+](https://www.docker.com/products/docker-desktop)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) or [OrbStack](https://orbstack.dev/)
 
 Python is available for Mac machines using package managers.
 
-:::{note}
-If you know what the best way of installing Python 3 is, please let us know
-by updating this documentation on Github.
-:::
-
 There is a good chance you already have Python installed. Try running `python3 --version` to check.
 
+(install-macos)=
 ### Installing Riptide
 
 Riptide should always be installed in a dedicated Python virtual environment to avoid conflicts between system packages and Riptide.
@@ -85,7 +70,7 @@ commands into your shell. Add the following lines to your .zshrc after any chang
 # Riptide shell integration
 . riptide.hook.zsh
 # Riptide code completion
-eval "$(_RIPTIDE_COMPLETE=source_zsh riptide)"
+eval "$(_RIPTIDE_COMPLETE=zsh_source riptide)"
 ```
 
 If you use Bash, add this to your .bashrc after any changes to PATH:
@@ -94,7 +79,7 @@ If you use Bash, add this to your .bashrc after any changes to PATH:
 # Riptide shell integration
 . riptide.hook.bash
 # Riptide code completion
-eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
+eval "$(_RIPTIDE_COMPLETE=bash_source riptide)"
 ```
 
 #### SSL Certificate
@@ -102,6 +87,7 @@ eval "$(_RIPTIDE_COMPLETE=source_bash riptide)"
 Finally you want to import the SSL certificate authority. This allows your browser to trust
 the Riptide proxy server. See {ref}`user_docs/proxy:Import the SSL certificate authority` for more details.
 
+(upgrade-macos)=
 ## Updating Riptide
 
 To update Riptide, run:
@@ -112,7 +98,7 @@ riptide_upgrade
 
 After this make sure to restart the Proxy server. 
 
-## Configuring shared folders
+## Configuring shared folders (Docker Desktop)
 
 Docker Desktop for MacOS only allows the virtual machine running the Docker daemon
 limited access to your machine.
@@ -128,28 +114,14 @@ are present:
 - /var/folders
 - /usr/local/lib/python3.7 (**Or wherever else Python is installed!**)
 
-## Additional MacOS related notes
-
-Many additional settings or issues not described in this documentation may be
-directly related to the Docker Desktop for MacOS implementation.
-
-Please see the [documentation for Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/) for further information.
-
 ## Known issues under MacOS
 
-- Riptide currently uses the default Docker Desktop Mac daemon. This setup is known
-  to have significantly worse performance than the Linux version. Riptide has some
-  [Performance optimizations] to increase performance.
+- Due to emulation, Docker will generally run slower on macOS than on Linux. Consider using
+  OrbStack, as it has been reported to be much faster than Docker Desktop. Additionally Riptide
+  has some [Performance optimizations] enabled by default to increase performance.
 - Due to the performance optimization settings, it might happen that changes to files
   are not immediately visible on the host system or the running containers. Some files
   are not updated on the host system at all (see [Performance optimizations]).
-
-:::{note}
-If you are a Mac developer and want to improve this situation, please contact us.
-A possible solution for the perfomance issues may be something like a
-[docker-sync](https://github.com/EugenMayer/docker-sync) implementation
-for Riptide.
-:::
 
 ## Next steps
 

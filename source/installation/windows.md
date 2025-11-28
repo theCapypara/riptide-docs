@@ -1,18 +1,14 @@
 # Windows Installation
 
-This guide will explain how to install Riptide under Windows.
+This guide will explain how to install Riptide under Windows. This explains how to
+install it directly, without using WSL. 
+
+**We generally recommend trying to use WSL instead**. If you want to do that, follow
+the Linux instructions instead after setting up WSL.
 
 :::{note}
-Windows is not supported as well as the Linux setup. Most of the downsides
-of Riptide on Windows come from the Docker Desktop implementation for Windows.
-
-Riptide has some [Performance optimizations] to increase
-the performance on Windows, but it will still be slower than running it on Linux.
-
-Also we can not offer any Windows specific support at the moment.
-
-If you have experience with Docker or Python on Windows, we'd love your support in making
-Riptide on Windows even better!
+We can not offer any Windows specific support at the moment. New Riptide releases
+are not actively tested on Windows currently and may not work.
 :::
 
 ## Installing Requirements
@@ -20,13 +16,11 @@ Riptide on Windows even better!
 This guide assumes you want to run Riptide in the most common set-up using the Docker Engine.
 To use Riptide you need to have the following installed:
 
-- Python 3.8+
-  \* Download: [Python website](https://www.python.org/downloads/).
+- [Python 3.11+](https://www.python.org/downloads/)
 - pip for Python 3 (might come installed with Python)
-- [Docker Desktop 16.0+](https://www.docker.com/products/docker-desktop)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-There is a good chance you already have Python installed. Try running `python3 --version` to check.
-
+(install-windows)=
 ## Installing Riptide
 
 Riptide should always be installed in a dedicated Python virtual environment to avoid conflicts between system packages and Riptide.
@@ -68,6 +62,7 @@ riptide config-edit-user --factoryreset
 Finally you want to import the SSL certificate authority. This allows your browser to trust
 the Riptide proxy server. See {ref}`user_docs/proxy:Import the SSL certificate authority` for more details.
 
+(upgrade-windows)=
 ## Updating Riptide
 
 To update Riptide, run:
@@ -99,14 +94,6 @@ Please see the [documentation for Docker Desktop for Windows](https://docs.docke
 - Due to the performance optimization settings, it might happen that changes to files
   are not immediately visible on the host system or the running containers. Some files
   are not updated on the host system at all (see [Performance optimizations]).
-
-:::{note}
-If you are a Windows developer and want to improve this situation, please contact us.
-A possible solution for the perfomance issues may be something like a
-[docker-sync](https://github.com/EugenMayer/docker-sync) implementation
-for Riptide or using Docker with WSL2 instead of using Docker Desktop. If you do,
-please share your experience!
-:::
 
 ## Next steps
 
