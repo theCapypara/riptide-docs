@@ -44,17 +44,12 @@ submodule
 
 
 
-The riptide-cli package to use\.
+The riptide-cli package to use\. Defaults to the one provided by this Flake
 
 
 
 *Type:*
 package
-
-
-
-*Default:*
-` pkgs.riptide-cli `
 
 
 
@@ -125,17 +120,12 @@ boolean
 
 
 
-The riptide-db-mongo package to use\.
+The riptide-db-mongo package to use\. Defaults to the one provided by this Flake
 
 
 
 *Type:*
 package
-
-
-
-*Default:*
-` pkgs.riptide-db-mongo `
 
 
 
@@ -187,17 +177,12 @@ boolean
 
 
 
-The riptide-db-mysql package to use\.
+The riptide-db-mysql package to use\. Defaults to the one provided by this Flake
 
 
 
 *Type:*
 package
-
-
-
-*Default:*
-` pkgs.riptide-db-mysql `
 
 
 
@@ -250,17 +235,12 @@ submodule
 
 
 
-The riptide-engine-docker package to use\.
+The Riptide Engine package to use\. Defaults to riptide-engine-docker provided by this Flake
 
 
 
 *Type:*
 package
-
-
-
-*Default:*
-` pkgs.riptide-engine-docker `
 
 
 
@@ -293,7 +273,7 @@ Additional configuration to merge into the system configuration
 
 
 *Type:*
-JSON value
+open submodule of (JSON value)
 
 
 
@@ -369,17 +349,12 @@ boolean
 
 
 
-The riptide-plugin-php-xdebug package to use\.
+The riptide-plugin-php-xdebug package to use\. Defaults to the one provided by this Flake
 
 
 
 *Type:*
 package
-
-
-
-*Default:*
-` pkgs.riptide-plugin-php-xdebug `
 
 
 
@@ -431,17 +406,12 @@ boolean
 
 
 
-The riptide-proxy package to use\.
+The riptide-proxy package to use\. Defaults to the one provided by this Flake
 
 
 
 *Type:*
 package
-
-
-
-*Default:*
-` pkgs.riptide-proxy `
 
 
 
@@ -553,6 +523,20 @@ string
 
 *Example:*
 ` "riptide.local" `
+
+
+
+
+### services\.riptide\.python
+
+
+
+What Python environment to use\. Change this only if you know what you are doing
+
+
+
+*Type:*
+package
 
 
 
