@@ -39,6 +39,10 @@ Latest NPM with different Node.js versions. Avaiable Node.js versions:
 - 19
 - 20
 - 21
+- 22
+- 23
+- 24
+- 25
 
 ## `/command/npm/in-node-service`
 
